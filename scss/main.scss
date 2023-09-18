@@ -1,0 +1,8 @@
+@import "_reset";
+@import "variables";
+@import "header";
+
+body {
+  background-color: $dark-purple;
+  color: $white;
+}
