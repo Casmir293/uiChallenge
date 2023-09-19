@@ -19,6 +19,10 @@ h2 {
   }
 }
 
+.laptop-menu {
+  display: none;
+}
+
 .menu-icon {
   width: 1.1875rem;
   height: 0.875rem;
@@ -30,23 +34,6 @@ h2 {
   border: 0.5px solid rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(30px);
   display: none;
-  transition: 1s;
-}
-
-.mobile-menu-open {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s, transform 0.3s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.mobile-menu-closed {
-  opacity: 0;
-  transform: translateY(-100%);
-  pointer-events: none;
 }
 
 .close-menu-btn {
@@ -55,7 +42,7 @@ h2 {
   padding: 1.5rem;
 }
 
-ul {
+.mobile-ul {
   padding: 0px 50px 0px 50px;
   li {
     list-style: none;
@@ -96,7 +83,32 @@ ul {
 
 // Media Query for Laptops
 @media (min-width: 992px) {
+  header {
+    padding: 1.5rem 8rem;
+  }
   .menu-icon {
     display: none;
+  }
+
+  .laptop-menu {
+    display: flex;
+  }
+  ul {
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+    li {
+      list-style: none;
+      padding: 0 1.5rem;
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+      }
+    }
   }
 }
