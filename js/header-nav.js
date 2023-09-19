@@ -3,22 +3,20 @@ const header = document.querySelector(".header");
 const mobileMenu = document.querySelector(".mobile-menu");
 const menuIcon = document.querySelector(".menu-icon");
 
-// Function to show the mobile menu smoothly
+// Function to hide the header and show the mobile menu
 function showMobileMenu() {
+  header.style.display = "none";
   mobileMenu.style.display = "block";
-  setTimeout(() => {
-    mobileMenu.classList.add("mobile-menu-open");
-  }, 300);
 }
 
-// Function to hide the mobile menu smoothly
+// Function to show the header and hide the mobile menu
 function hideMobileMenu() {
-  mobileMenu.classList.remove("mobile-menu-open");
-  setTimeout(() => {
-    mobileMenu.style.display = "none";
-  }, 300);
+  header.style.display = "flex";
+  mobileMenu.style.display = "none";
 }
 
+// Event listener for the menuIcon click
 menuIcon.addEventListener("click", showMobileMenu);
 
+// Event listener for the closeBtn click
 closeBtn.addEventListener("click", hideMobileMenu);
