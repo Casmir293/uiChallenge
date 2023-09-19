@@ -128,12 +128,18 @@ h2 span {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0rem;
 }
 .feature img {
   width: 50px;
   height: auto;
   display: inline;
+}
+
+.purple-lens {
+  flex-shrink: 0;
+  background: url(/img/Purple-Lens-Flare-PNG.png) no-repeat;
+  background-blend-mode: hard-light;
 }
 
 .igniting {
@@ -215,6 +221,10 @@ h2 span {
   line-height: 166%;
 }
 
+.feature-top {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .feature-top .register-btn {
   width: 9.5rem;
   height: 2.92731rem;
@@ -230,6 +240,32 @@ h2 span {
 }
 .time span {
   font-size: 0.875rem;
+}
+
+.feature-bottom {
+  position: relative;
+}
+.feature-bottom img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.feature-bottom .boy-img {
+  width: 100%;
+  height: 22.64969rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-blend-mode: luminosity;
+  position: relative;
+}
+.feature-bottom .light-img {
+  width: 90%;
+  height: 20.30556rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-blend-mode: hard-light;
 }
 
 body {
