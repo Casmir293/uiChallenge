@@ -1,9 +1,11 @@
 @import "_reset";
-@import "variables";
-@import "header-nav";
+@import "_font";
+@import "_header-nav";
+@import "_color";
+@import "_contact";
 
 body {
   background-color: $dark-purple;
   color: $white;
-  font-family: "Montserrat", sans-serif;
+  font-family: $text-font;
 }
