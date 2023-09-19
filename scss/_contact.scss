@@ -1,11 +1,74 @@
-section{
+// Contact-header
+.header {
+  border-bottom: none;
+}
+.laptop-menu a{
+  font-size: 14px;
+}
+// STAR IMAGES
+.star-img-1 {
+  width: 21px;
+  height: 25px;
+  flex-shrink: 0;
+  margin-top: 88px;
+  margin-left: 205px;
+}
+
+.contact-section {
   width: 100%;
   display: flex;
- background-color: aqua;
+  height: 100vh;
+
+  // left view
+  .left {
+    // padding: 150px;
+    margin-top: 88px;
+    width: 30%;
+    margin-left: 188px;
+
+    .contact-info h2 {
+      font-size: 32px;
+      color: $light-purple;
+      font-family: $header-font;
+      font-weight: 600;
+      margin-bottom: 17px;
+    }
+    .contact-info p {
+      font-family: $text-font;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .contact-socials p {
+      font-family: $text-font;
+      font-size: 16px;
+      font-weight: 400;
+      color: $light-purple;
+    }
+    .contact-icon {
+      height: 20px;
+      display: flex;
+    }
+    .contact-icon a {
+      text-decoration: none;
+    
+    }
+  }
+
+  
+//  Right view
+  .right {
+    width: 70%;
+    margin-top: 157px;
+    margin-left: 80px;
+    
+    form {
+      width: 70%;
+      padding: 50px;
+      height: auto;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
 }
-.left{
-  width: 40%;
- }
- .right{
-  width: 60%;
- }
