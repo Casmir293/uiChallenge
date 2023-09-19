@@ -31,6 +31,10 @@ h2 span {
   color: #d434fe;
 }
 
+.laptop-menu {
+  display: none;
+}
+
 .menu-icon {
   width: 1.1875rem;
   height: 0.875rem;
@@ -51,14 +55,14 @@ h2 span {
   padding: 1.5rem;
 }
 
-ul {
+.mobile-ul {
   padding: 0px 50px 0px 50px;
 }
-ul li {
+.mobile-ul li {
   list-style: none;
   margin-bottom: 20px;
 }
-ul li a {
+.mobile-ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.125rem;
@@ -91,8 +95,32 @@ ul li a {
 }
 
 @media (min-width: 992px) {
+  header {
+    padding: 1.5rem 8rem;
+  }
   .menu-icon {
     display: none;
+  }
+  .laptop-menu {
+    display: flex;
+  }
+  ul {
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+  }
+  ul li {
+    list-style: none;
+    padding: 0 1.5rem;
+  }
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
   }
 }
 body {
