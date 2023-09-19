@@ -1,0 +1,9 @@
+@import "_reset";
+@import "variables";
+@import "header-nav";
+
+body {
+  background-color: $dark-purple;
+  color: $white;
+  font-family: "Montserrat", sans-serif;
+}
