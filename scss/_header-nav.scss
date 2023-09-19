@@ -28,23 +28,6 @@ h2 {
   border: 0.5px solid rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(30px);
   display: none;
-  transition: 1s;
-}
-
-.mobile-menu-open {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s, transform 0.3s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.mobile-menu-closed {
-  opacity: 0;
-  transform: translateY(-100%);
-  pointer-events: none;
 }
 
 .close-menu-btn {
