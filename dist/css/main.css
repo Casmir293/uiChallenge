@@ -387,10 +387,22 @@ h2 span {
 }
 
 .detail-flex-2 {
-  background: url(/img/purple-lens.png), no-repeat;
-  background-blend-mode: hard-light;
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
+}
+
+.detail-flex-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/img/purple-lens.png) no-repeat;
+  background-blend-mode: hard-light;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 @media (min-width: 992px) {
