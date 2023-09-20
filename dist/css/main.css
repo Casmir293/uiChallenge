@@ -46,7 +46,13 @@ h2 span {
   border: 0.5px solid rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+  background-color: #150e28;
   display: none;
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+  left: 0px;
+  top: 0px;
 }
 
 .close-menu-btn {
