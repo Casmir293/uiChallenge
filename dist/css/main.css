@@ -46,7 +46,13 @@ h2 span {
   border: 0.5px solid rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+  background-color: #150e28;
   display: none;
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+  left: 0px;
+  top: 0px;
 }
 
 .close-menu-btn {
@@ -121,6 +127,204 @@ h2 span {
     font-weight: 400;
     line-height: normal;
     cursor: pointer;
+  }
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.feature img {
+  width: 50px;
+  height: auto;
+  display: inline;
+}
+
+.purple-lens {
+  flex-shrink: 0;
+  background: url(/img/Purple-Lens-Flare-PNG.png) no-repeat;
+  background-blend-mode: hard-light;
+}
+
+.igniting {
+  margin: auto;
+  margin-top: 1.5rem;
+  position: relative;
+  width: 20.25rem;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.igniting b {
+  position: relative;
+}
+
+.igniting svg {
+  position: absolute;
+  bottom: -70%;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 117px;
+  height: 11px;
+}
+
+.get-linked {
+  margin-top: 3rem;
+  position: relative;
+  font-family: "Clash Display", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.get-linked img {
+  width: 1.125rem;
+  height: 1.625rem;
+}
+
+.tech {
+  display: inline-block;
+  position: relative;
+}
+
+.idea {
+  position: absolute;
+  top: -15px;
+  left: 18px;
+  transform: translateX(-50%);
+}
+
+.hackathon {
+  margin-bottom: 1.5rem;
+  font-family: "Clash Display", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hackathon span {
+  color: #d434fe;
+}
+.hackathon img {
+  width: 2.04981rem;
+  height: 2.04981rem;
+}
+
+.participate {
+  margin-bottom: 1.5rem;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166%;
+}
+
+.feature-top {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.feature-top .register-btn {
+  width: 9.5rem;
+  height: 2.92731rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.time {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%;
+}
+.time span {
+  font-size: 0.875rem;
+}
+
+.feature-bottom {
+  background: url(/img/purple-lens.png), no-repeat;
+  background-blend-mode: hard-light;
+  position: relative;
+}
+.feature-bottom img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.feature-bottom .boy-img {
+  width: 100%;
+  height: 22.64969rem;
+  filter: grayscale(70%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-blend-mode: luminosity;
+  position: relative;
+}
+.feature-bottom .light-img {
+  width: 90%;
+  height: 20.30556rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-blend-mode: hard-light;
+}
+
+@media (min-width: 992px) {
+  .purple-lens {
+    background-position: left top;
+  }
+  .feature {
+    padding-left: 8rem;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .igniting {
+    margin: 0;
+    font-size: 2.25rem;
+    width: 46.375rem;
+  }
+  .contain {
+    padding: 2rem 5rem 2rem 0rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .feature-top img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .feature-top .register-btn {
+    margin: 0px 0px 2rem 0px;
+  }
+  .get-linked,
+  .hackathon {
+    font-size: 5rem;
+  }
+  .idea {
+    top: -30px;
+  }
+  .participate {
+    font-size: 1.25rem;
+  }
+  .time {
+    font-size: 4rem;
+  }
+  .feature-bottom .boy-img {
+    width: 51.75rem;
+    height: 44.6875rem;
+  }
+  .feature-bottom .light-img {
+    width: 41.6875rem;
+    height: 40.0625rem;
   }
 }
 body {

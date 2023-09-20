@@ -1,7 +1,7 @@
-@import "_reset";
+@import "reset";
 @import "variables";
 @import "header-nav";
-
+@import "feature";
 body {
   background-color: $dark-purple;
   color: $white;
