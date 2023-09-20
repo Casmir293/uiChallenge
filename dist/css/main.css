@@ -128,7 +128,7 @@ h2 span {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem 0rem;
+  padding-bottom: 2rem;
 }
 .feature img {
   width: 50px;
@@ -143,10 +143,8 @@ h2 span {
 }
 
 .igniting {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  margin: auto;
+  margin-top: 1.5rem;
   position: relative;
   width: 20.25rem;
   flex-shrink: 0;
@@ -268,6 +266,62 @@ h2 span {
   background-blend-mode: hard-light;
 }
 
+@media (min-width: 992px) {
+  .purple-lens {
+    background-position: left top;
+  }
+  .feature {
+    padding-left: 8rem;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .igniting {
+    margin: 0;
+    font-size: 2.25rem;
+    width: 46.375rem;
+  }
+  .contain {
+    padding: 2rem 5rem 2rem 0rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .feature-top img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .feature-top .register-btn {
+    margin: 0px 0px 2rem 0px;
+  }
+  .get-linked,
+  .hackathon {
+    font-size: 5rem;
+  }
+  .idea {
+    top: -30px;
+  }
+  .participate {
+    font-size: 1.25rem;
+  }
+  .time {
+    font-size: 4rem;
+  }
+  .feature-bottom {
+    background: url(/img/purple-lens.png), no-repeat;
+    background-blend-mode: hard-light;
+  }
+  .feature-bottom .boy-img {
+    width: 51.75rem;
+    height: 44.6875rem;
+  }
+  .feature-bottom .light-img {
+    width: 41.6875rem;
+    height: 40.0625rem;
+  }
+}
 body {
   background-color: #150e28;
   color: #fff;
