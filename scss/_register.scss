@@ -1,0 +1,60 @@
+@import "_color";
+@import "_font";
+
+// body {
+//   height: 140vh;
+// }
+// header
+.header {
+  border-bottom: none;
+}
+.laptop-menu a { 
+  font-size: 14px;
+}
+.contact-nav {
+  font-weight: 600;
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register-section{
+  width: 100%;
+  display: flex;
+}
+
+.register-left{
+  width: 50%;
+}
+
+.register-right{
+  width: 50%;
+}
+.registration-form h2:first-child{
+  color: $light-purple;
+font-family: $header-font;
+font-size: 32px;
+// font-style: normal;
+font-weight: 600;
+// line-height: normal;
+}
+.registration-form p{
+  color: #FFF;
+font-family: $text-font;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.registration-form{
+  // margin-top: 30px;
+  // margin-left: 30px;
+  // width: 70%;
+  // padding: 20px 90px;
+  height: auto;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  // display: block;
+}
