@@ -1,0 +1,94 @@
+.faq {
+  border-bottom: 1px solid grey;
+  .faq-top {
+    padding: 0rem 2rem;
+    padding-top: 3rem;
+    text-align: center;
+    .faq-heading {
+      font-family: $header-font;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 133%;
+      width: 9.875rem;
+      margin: auto;
+      padding-bottom: 1rem;
+      span {
+        color: $light-purple;
+      }
+    }
+    .faq-paragraph {
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.71875rem;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.accordion-item {
+  border-bottom: 1px solid $light-purple !important;
+}
+
+.faq-accordion {
+  button {
+    background-color: $dark-purple;
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+    padding: 2rem 1rem;
+  }
+  .accordion-button {
+    background-color: $dark-purple;
+    color: $white;
+  }
+
+  .collapse {
+    background: $light-purple;
+  }
+}
+
+.accordion-button::after {
+  filter: invert(60%);
+}
+
+.faq-bottom {
+  padding: 3rem 2rem;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Media Query for Laptops
+@media (min-width: 992px) {
+  .faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0rem 10rem 3rem 10rem;
+    .faq-top {
+      text-align: left;
+      .faq-heading {
+        margin: 0;
+        font-size: 2rem;
+        width: 15.8125rem;
+      }
+      .faq-paragraph {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.faq-accordion {
+  button {
+    font-size: 0.875rem;
+  }
+}

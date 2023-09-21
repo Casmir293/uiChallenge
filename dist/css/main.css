@@ -448,6 +448,94 @@ h2 span {
     border-bottom: 1px solid grey;
   }
 }
+.faq {
+  border-bottom: 1px solid grey;
+}
+.faq .faq-top {
+  padding: 0rem 2rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+.faq .faq-top .faq-heading {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+  width: 9.875rem;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.faq .faq-top .faq-heading span {
+  color: #d434fe;
+}
+.faq .faq-top .faq-paragraph {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71875rem;
+}
+.faq .faq-top .faq-paragraph span {
+  font-weight: 700;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #d434fe !important;
+}
+
+.faq-accordion button {
+  background-color: #150e28;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  padding: 2rem 1rem;
+}
+.faq-accordion .accordion-button {
+  background-color: #150e28;
+  color: #fff;
+}
+.faq-accordion .collapse {
+  background: #d434fe;
+}
+
+.accordion-button::after {
+  filter: invert(60%);
+}
+
+.faq-bottom {
+  padding: 3rem 2rem;
+}
+.faq-bottom img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0rem 10rem 3rem 10rem;
+  }
+  .faq .faq-top {
+    text-align: left;
+  }
+  .faq .faq-top .faq-heading {
+    margin: 0;
+    font-size: 2rem;
+    width: 15.8125rem;
+  }
+  .faq .faq-top .faq-paragraph {
+    font-size: 0.875rem;
+  }
+}
+.faq-accordion button {
+  font-size: 0.875rem;
+}
+
 body {
   background-color: #150e28;
   color: #fff;
