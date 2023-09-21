@@ -536,6 +536,89 @@ h2 span {
   font-size: 0.875rem;
 }
 
+.timeline {
+  margin-top: 3rem;
+}
+.timeline .timeline-head {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.timeline .timeline-head .timeline-subhead {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+}
+.timeline .timeline-head .timeline-subbody {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 172.4%;
+  width: 18.25rem;
+  margin: auto;
+}
+
+.time-wrapper {
+  padding: 1rem 3rem;
+}
+.time-wrapper .time-content {
+  border-left: 2px solid #d434fe;
+  padding-left: 1rem;
+}
+.time-wrapper .time-content .time-content-head {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Clash Display", sans-serif;
+  color: #d434fe;
+}
+.time-wrapper .time-content .time-content-body {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 159.9%;
+  margin-bottom: 0.5rem;
+}
+.time-wrapper .num-date {
+  display: flex;
+  align-items: center;
+}
+.time-wrapper .num-date .time-num {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background: linear-gradient(270deg, #903aff 0%, #d434fe 100%);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.time-wrapper .num-date .time-date {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #d434fe;
+  padding-left: 1rem;
+}
+
+.timeline-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .timeline-phone {
+    display: none;
+  }
+  .timeline-desktop {
+    display: block;
+  }
+}
 body {
   background-color: #150e28;
   color: #fff;
