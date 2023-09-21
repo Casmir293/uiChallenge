@@ -1,16 +1,13 @@
-<<<<<<< HEAD
+
 @import "_reset";
 @import "_font";
 @import "_header-nav";
 @import "_color";
 @import "_contact";
+@import "_register.scss";
+// @import "variables";
+// @import "feature";
 
-=======
-@import "reset";
-@import "variables";
-@import "header-nav";
-@import "feature";
->>>>>>> 5e363a1e9f57c281a29e90eea1c921b0d82b5742
 body {
   background-color: $dark-purple;
   color: $white;

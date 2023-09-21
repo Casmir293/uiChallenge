@@ -1,22 +1,24 @@
+@import '_color';
+@import '_font';
 // Contact-header
-body{
+body {
   height: 140vh;
 }
 .header {
   border-bottom: none;
 }
-.mobile-header{
+.mobile-header {
   visibility: hidden;
 }
-.laptop-menu a{
+.laptop-menu a { 
   font-size: 14px;
 }
-.contact-nav{
+.contact-nav {
   font-weight: 600;
-  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 // STAR IMAGES
 .star-img-1 {
@@ -25,7 +27,7 @@ background-clip: text;
   margin-top: 50px;
   margin-left: 205px;
 }
-.star-img-2{
+.star-img-2 {
   width: 26px;
   height: 32px;
   flex-shrink: 0;
@@ -33,7 +35,7 @@ background-clip: text;
   margin-top: -50px;
   margin-left: 500px;
 }
-.star-img-3{
+.star-img-3 {
   width: 30px;
   height: 36px;
   position: absolute;
@@ -42,296 +44,281 @@ background-clip: text;
   margin-top: -143px;
   margin-left: 15px;
 }
-.star-img-4{
+.star-img-4 {
   width: 26px;
   height: 32px;
   flex-shrink: 0;
   position: absolute;
   margin-left: 625px;
- margin-top: -50px;
+  margin-top: -50px;
 }
 .contact-section {
   width: 100%;
   display: flex;
 }
 
-  // left view
-  .left {
-    // padding: 150px;
-    margin-top: 80px;
-    width: 30%;
-    margin-left: 188px;
-
-    .contact-info h2 {
-      font-size: 25px;
-      color: $light-purple;
-      font-family: $header-font;
-      font-weight: 600;
-      margin-bottom: 17px;
-    }
-    .contact-info p {
-      font-family: $text-font;
-      font-size: 14px;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-    .contact-socials p {
-      font-family: $text-font;
-      font-size: 16px;
-      font-weight: 400;
-      color: $light-purple;
-    }
-    .contact-icon {
-      height: 20px;
-      
-    }
-    // .facebook-icon{
-    //   margin-top: -5px;
-    // }
-    // .X-icon{
-    //   margin-top: -5px;
-    // }
-    .contact-icon a {
-      text-decoration: none;
-    
-    }
+// left view
+.left {
+  // padding: 150px;
+  margin-top: 80px;
+  width: 30%;
+  margin-left: 188px;
+}
+  .contact-info h2 {
+    font-size: 25px;
+    color: $light-purple;
+    font-family: $header-font;
+    font-weight: 600;
+    margin-bottom: 17px;
+  }
+  .contact-info p {
+    font-family: $text-font;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .contact-socials p {
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 400;
+    color: $light-purple;
+  }
+  .contact-icon {
+    height: 20px;
+  }
+ 
+  .contact-icon a {
+    text-decoration: none;
+  }
+  .facebook-icon {
+    margin: -5px 5px 0 5px;
+  }
+  .X-icon {
+    margin: -5px 5px 0 5px;
   }
 
-  
 //  Right view
-  .right {
-    width: 70%;
-    margin-left: 80px;
+.right {
+  width: 70%;
+  margin-left: 80px;
+}
+.form {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 70%;
+  padding: 20px 90px;
+  height: auto;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+h3 {
+  font-family: $text-font;
+  color: $light-purple;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+}
+h3:first-child {
+  margin-top: 55px;
+}
+.form-text {
+  visibility: hidden;
+}
+input {
+  background-color: transparent;
+  border: solid 1px #fff;
+  padding: 10px;
+}
+input::placeholder {
+  color: #fff;
+  font-family: $text-font;
+}
+.mobile-input {
+  display: none;
+}
+.name-input {
+  // margin-top: 20px;
+  width: 100%;
+}
+.email-input {
+  margin-top: 32px;
+  width: 100%;
+}
+.message-input {
+  margin-top: 29px;
+  width: 100%;
+  height: 70px;
+
+  // padding: 50px;
+}
+.message-input::placeholder {
+  margin-top: -20px;
+}
+.submit-btn {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px 70px;
+  border-radius: 0.25rem;
+  background: $gradient;
+  margin: 30px auto;
+  font-size: 0.9rem;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-    .form {
-      margin-top: 30px;
-      margin-left: 30px;
-      width: 70%;
-      padding: 20px 90px ;
-      height: auto;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.03);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      display: block;
-    }
-      h3{
-        font-family: $text-font;
-        color: $light-purple;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 1.5;
-       }
-       h3:first-child{
-        margin-top: 55px;
-       }
-       .form-text{
-        visibility: hidden;
-        }
-       input{
-        background-color: transparent;
-        border: solid 1px #fff;
-        padding: 10px;
-       }
-       input::placeholder{
-        color: #fff;
-        font-family: $text-font;
-       }
-       .mobile-input{
-        display: none;
-       }
-      .name-input{
-        margin-top: 30px;
-        width: 100%;
-      }
-      .email-input{
-        margin-top: 42px;
-        width: 100%;
-      }
-      .message-input{
-        margin-top: 39px;
-        width: 100%;
-        height: 100px;
-        
-        // padding: 50px;
-      }
-      .message-input::placeholder{
-        margin-top: -20px;
-      }
-      .submit-btn{
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        padding: 15px 70px;
-        border-radius: 0.25rem;
-        background: $gradient;
-        margin: 30px auto;
-        font-size: 0.9rem;
-        font-weight: 400;
-    
-        a {
-          text-decoration: none;
-          color: $white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          
-        }
-       
-      }
-      .form-contact-socials{
-        display: none;
-      }
+}
+.form-contact-socials {
+  display: none;
+}
 
 @media screen and (max-width: 650px) {
-  body{
+  body {
     height: 130vh;
   }
- .header{
-  display: none;
- }
- .mobile-header{
- visibility: visible;
- border: none;
-}
-  svg{
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    visibility: visible;
+    border: none;
+  }
+  svg {
     margin-top: 30px;
   }
   // STAR IMAGES
-.star-img-1 {
-  width: 12px;
-  height: 14px;
-  margin-top: 0;
-  margin-left: 180px;
-}
-.star-img-2{
-  width: 16px;
-  height: 20px;
-  flex-shrink: 0;
-  position: absolute;
-  margin-left: 320px;
-  margin-top: 90px;
+  .star-img-1 {
+    width: 12px;
+    height: 14px;
+    margin-top: 0;
+    margin-left: 180px;
+  }
+  .star-img-2 {
+    width: 16px;
+    height: 20px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 90px;
+  }
+
+  .star-img-3 {
+    width: 12px;
+    height: 14px;
+    position: absolute;
+    z-index: 3;
+    flex-shrink: 0;
+    margin-top: -153px;
+    margin-left: 35px;
+  }
+  .star-img-4 {
+    width: 12px;
+    height: 14px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 461px;
+    margin-top: -220px;
+  }
+
+.left {
+  display: none;
 }
 
-.star-img-3{
-  width: 12px;
-  height: 14px;
-  position: absolute;
-  z-index: 3;
-  flex-shrink: 0;
-  margin-top: -153px;
-  margin-left: 35px;
+.contact-section .right {
+  width: 100%;
+  margin-left: 0;
 }
-.star-img-4{
-  width: 12px;
-  height: 14px;
-  flex-shrink: 0;
-  position: absolute;
-  margin-left: 461px;
- margin-top: -220px;
+.contact-section .right .form {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
+  height: auto;
+  border-radius: none;
+  background: none;
+  box-shadow: none;
+  display: block;
+  border: 0;
 }
+
+h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0 10px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+}
+h3:first-child {
+  margin-bottom: 0px;
+}
+p.form-text {
+  visibility: visible;
+  font-family: $text-font;
+  font-size: 12px;
+  padding: 0 70px;
+  margin-left: -70px;
+  font-weight: 400;
+}
+input {
+  padding: 15px;
+  border-radius: 4px;
+}
+input::placeholder {
+  color: #fff;
+  font-family: $text-font;
+}
+.desktop-input {
+  display: none;
+}
+.mobile-input {
+  display: block;
+}
+.team-name {
+  margin-top: 30px;
+  width: 100%;
+}
+.email-input {
+  margin-top: 42px;
+  width: 100%;
+}
+.topic-input {
+  margin-top: 42px;
+  width: 100%;
+}
+.message-input {
+  margin-top: 39px;
+  width: 100%;
+  height: 150px;
+}
+
+.form-contact-socials {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+.form-contact-socials p {
+  font-family: $text-font;
+  font-size: 16px;
+  font-weight: 400;
+  color: $light-purple;
+  margin-bottom: -10px;
+}
+
+.facebook-icon {
+  margin: auto 10px;
+}
+.X-icon {
+  margin: auto 10px;
+}
+.contact-icon a {
+  text-decoration: none;
  }
-  .left{
-    display: none;
-  }
-
-  
- .contact-section .right {
-    width: 100%;
-    margin-left: 0;
-  }
-  .contact-section .right .form {
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 40px ;
-    height: auto;
-    border-radius: none;
-    background: none;
-    box-shadow: none;
-    display: block;
-    border: 0;
-  }
- 
-  
-      h3{
-        font-size: 20px;
-        line-height: 1.5;
-        padding:0 10px;
-        margin-left: -10px;
-       margin-bottom: 20px;
-      }
-       h3:first-child{
-        margin-bottom: 0px;
-       }
-      p.form-text{
-        visibility: visible;
-        font-family: $text-font;
-        font-size: 12px;
-        padding: 0 70px;
-        margin-left: -70px;
-        font-weight: 400;
-       }
-       input{
-        padding: 15px;
-        border-radius: 4px;
-       }
-       input::placeholder{
-        color: #fff;
-        font-family: $text-font;
-       }
-       .desktop-input{
-        display: none;
-        
-       }
-       .mobile-input{
-        display: block;
-
-       }
-      .team-name{
-        margin-top: 30px;
-        width: 100%;
-      }
-      .email-input{
-        margin-top: 42px;
-        width: 100%;
-      }
-      .topic-input{
-        margin-top: 42px;
-        width: 100%;
-      }
-      .message-input{
-        margin-top: 39px;
-        width: 100%;
-        height: 150px;
-      }
-     
-    
-  
-      .form-contact-socials{
-        display: block;
-        text-align: center;
-        margin-top: 50px;
-      }
-      .form-contact-socials p {
-        font-family: $text-font;
-        font-size: 16px;
-        font-weight: 400;
-        color: $light-purple;
-        margin-bottom: -10px;
-      }
-      
-      .facebook-icon{
-        
-        margin:auto 10px;
-      }
-      .X-icon{
-       
-        margin:auto 10px;
-      }
-      .contact-icon a {
-        text-decoration: none;
-        
-      }
-    
-
+}
