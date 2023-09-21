@@ -1,3 +1,5 @@
+@import "_color";
+
 header {
   display: flex;
   justify-content: space-between;
@@ -62,6 +64,10 @@ h2 {
       cursor: pointer;
     }
   }
+}
+// check it
+.contact-nav {
+  color: $gradient;
 }
 
 .register-btn {

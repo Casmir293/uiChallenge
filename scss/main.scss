@@ -1,11 +1,6 @@
-@import "reset";
-@import "variables";
-@import "header-nav";
-@import "feature";
-@import "detail";
-@import "faq";
+
 body {
   background-color: $dark-purple;
   color: $white;
-  font-family: "Montserrat", sans-serif;
+  font-family: $text-font;
 }
