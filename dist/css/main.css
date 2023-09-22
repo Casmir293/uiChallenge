@@ -873,9 +873,153 @@ h2 span {
   z-index: -1;
 }
 
+.partner-top {
+  text-align: center;
+  padding: 3rem 3rem 0rem 3rem;
+}
+.partner-top .partner-head {
+  font-family: "Clash Display", sans-serif;
+  margin: auto;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.partner-top .partner-body {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170.9%;
+}
+
+.sponsor-border {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
+}
+.sponsor-border img {
+  width: 100%;
+}
+
+.sponsor-top {
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+  align-items: center;
+  justify-items: center;
+}
+.sponsor-top .sponsor {
+  padding: 5px;
+}
+.sponsor-top .sponsor-line {
+  width: 2px;
+  height: 45px;
+  background-color: #d434fe;
+}
+
+.sponsor-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 5px 0px;
+}
+.sponsor-center .hr-line {
+  width: 40px;
+  height: 2px;
+  background-color: #d434fe;
+}
+
+.sponsor-bottom {
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+  align-items: center;
+  justify-items: center;
+}
+.sponsor-bottom .sponsor {
+  padding: 5px;
+}
+.sponsor-bottom .sponsor-line {
+  width: 2px;
+  height: 40px;
+  background-color: #d434fe;
+}
+
+.paybox {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71875rem;
+}
+.paybox span {
+  color: #00a3ff;
+}
+
+.vuzual div {
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.vuzual div span {
+  color: #f00;
+}
+
+.design {
+  font-size: 0.2rem;
+  font-weight: 300;
+  float: right;
+}
+
 @media (min-width: 992px) {
   .partner::after {
     background: url(/img/purple-lens.png);
+  }
+  .partner-top {
+    padding-top: 5rem;
+  }
+  .partner-top .partner-head {
+    font-size: 2rem;
+  }
+  .partner-top .partner-body {
+    font-size: 0.875rem;
+  }
+  .sponsor-border {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 8rem 16rem;
+  }
+  .sponsor-top .sponsor {
+    padding: 15px;
+  }
+  .sponsor-top .sponsor-line {
+    width: 3px;
+    height: 200px;
+  }
+  .sponsor-bottom .sponsor {
+    padding: 15px;
+  }
+  .sponsor-bottom .sponsor-line {
+    width: 3px;
+    height: 200px;
+  }
+  .sponsor-center {
+    padding: 10px 0px;
+  }
+  .sponsor-center .hr-line {
+    width: 200px;
+    height: 3px;
+  }
+  .paybox {
+    font-size: 3rem;
+  }
+  .vuzual div {
+    font-size: 2rem;
+  }
+  .design {
+    font-size: 0.6875rem;
+    font-weight: 400;
   }
 }
 body {
