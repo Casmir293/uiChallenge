@@ -539,7 +539,6 @@ h2 span {
 .timeline {
   margin-top: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid grey;
 }
 .timeline .timeline-head {
   text-align: center;
@@ -673,6 +672,160 @@ h2 span {
     font-weight: 700;
     line-height: normal;
     color: #d434fe;
+  }
+}
+.prizes {
+  background: url(/img/premium_photo-1664443577580-dd2674e9d359\ 1.png) no-repeat;
+  background-blend-mode: color-burn;
+  background-color: #150e28;
+  padding: 4rem 3rem;
+}
+.prizes .prizes-top {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.prizes .prizes-top .prize-head {
+  font-family: "Clash Display", sans-serif;
+  width: 6.8rem;
+  margin: auto;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.prizes .prizes-top .prize-head span {
+  color: #d434fe;
+}
+.prizes .prizes-top .prize-body {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170.9%;
+}
+
+.prize-bottom img {
+  width: 100%;
+  height: auto;
+}
+.prize-bottom .trophy-img {
+  padding-bottom: 2.5rem;
+}
+.prize-bottom .medal-img {
+  display: flex;
+  gap: 5%;
+}
+.prize-bottom .gold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prize-bottom .gold img {
+  margin-top: -1rem;
+  width: 130%;
+  height: auto;
+  z-index: 1;
+}
+.prize-bottom .silver,
+.prize-bottom .bronze {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prize-bottom .silver img,
+.prize-bottom .bronze img {
+  margin-top: 1rem;
+  width: 80%;
+  height: auto;
+  z-index: 1;
+}
+.prize-bottom div .small {
+  margin-top: -1.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  width: 5.62544rem;
+  height: 7.85444rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d434fe;
+  background: rgba(212, 52, 254, 0.12);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 216.4%;
+}
+.prize-bottom div .small span {
+  color: #d434fe;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.prize-bottom div .small b {
+  font-weight: 700;
+}
+.prize-bottom div .large {
+  margin-top: -2rem;
+  padding-top: 3.5rem;
+  width: 5.62544rem;
+  height: 9.20769rem;
+  border-radius: 0.5rem;
+  border: 1px solid #903aff;
+  background: rgba(144, 58, 255, 0.12);
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 216.4%;
+}
+.prize-bottom div .large b {
+  font-weight: 700;
+}
+.prize-bottom div .large span {
+  color: #903aff;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .prize-bottom {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-items: center;
+  }
+  .prizes {
+    background: url(/img/largebackground.jpeg);
+    background-blend-mode: color-burn;
+    background-color: #150e28;
+  }
+  .prize-head {
+    font-size: 1.25rem;
+  }
+  .prize-body {
+    font-size: 0.85rem;
+  }
+  div .small {
+    font-size: 1.5rem;
+    width: 13.25rem;
+    height: 18.5rem;
+  }
+  div .small span {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  div .small b {
+    font-size: 2.25rem;
+  }
+  div .large {
+    font-size: 1.5rem;
+    width: 13.25rem;
+    height: 21.6875rem;
+  }
+  div .large b {
+    font-size: 2.25rem;
+  }
+  div .large span {
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
 body {
