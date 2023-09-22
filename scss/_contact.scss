@@ -126,10 +126,11 @@ h3:first-child {
 .form-text {
   visibility: hidden;
 }
-input {
+.name-input, .email-input, .team-name, .topic-input {
   background-color: transparent;
   border: solid 1px #fff;
   padding: 10px;
+ 
 }
 input::placeholder {
   color: #fff;
@@ -155,6 +156,7 @@ input::placeholder {
 }
 .message-input::placeholder {
   color: #fff;
+  margin-left: 10px;
 }
 .submit-btn {
   width: 30%;

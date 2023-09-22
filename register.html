@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register page</title>
+  <link rel="stylesheet" href="./fonts/display.css" />
   <link rel="stylesheet" href="dist/main.css">
+ 
 </head>
 <body>
   <header class="header">
@@ -35,7 +37,7 @@
         <li><a href="#">FAQs</a></li>
         <li><a href="#" class="contact-nav">Contact</a></li>
       </ul>
-      <div class="register-btn"><a href="#">Register</a></div>
+      <div class="register-button"><a href="#">Register</a></div>
     </nav>
   </header>
   <section class="register-section">
@@ -45,79 +47,81 @@
     <div class="register-right">
      <form action="where the data is sent to" method="how data is sent" class="registration-form">
       <h2>Register</h2>
-      <p>Be part of this movement</p> 
+      <img src="image/3d-graphic-designer-showing-thumbs-up-png 1.png" alt="3d-graphic-designer-showing-thumbs-up" class="little-image">
+      <p class="movement-text">Be part of this movement</p> 
       <!-- tiny image add -->
-      <h2>CREATE YOUR OWN ACCOUNT</h2>
-      <div>
-        <div>
-          <div >
+      <h4>CREATE YOUR OWN ACCOUNT</h4>
+      <div class="form-input">
+        <div class="form-flex">
+          <div class="name input">
             <label for="name-input">Team's Name</label>
             <input type="text" name="name" id="name-input" placeholder="Enter the name of your group">
           </div>
          
-          <div>
+          <div class="phone input">
             <label for="tel">Phone</label>
             <input type="tel" name="usrtel" id="number-input" placeholder="Enter your phone number">
           </div>
         </div>
-        <div>
-          <div >
+        <div class="form-flex">
+          <div class="email input">
             <label for="email-input">Email</label>
             <input type="email" name="email" id="email-input" placeholder="Enter your email address">
           </div>
          
-          <div>
+          <div class="topic input">
             <label for="topic-input">Project Topic</label>
             <input type="text" name="topic" id="topic-input" placeholder="What is your group project topic">
           </div>
         </div>
-        <div>
-          <div >
+        <div class="category-group">
+          <div class="category-input">
             <label for="category">Category</label>
-            <input type="text" name="name" id="category" placeholder="Select your category">
-            <select name="category" size="4">
-              <option value="one">one</option>
-              <option value="two">two</option>
-              <option value="three">three</option>
-              <option value="four">four</option>
-            </select>
+            <input type="text" name="name" id="category" placeholder="Select your category" list="category">
+            <datalist id="category">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
           </div>
          
-          <div>
+          <div class="group-input">
             <label for="number-input">Group Size</label>
-            <input type="number" name="number" id="number-input" placeholder="Select">
-            <select name="group-size" size="4">
-             
-              <option value="one">one</option>
-              <option value="two">two</option>
-              <option value="three">three</option>
-              <option value="four">four</option>
-            </select>
+            <input type="number" name="number" id="number-input" placeholder="Select" list="group-size">
+        
+            <datalist id="group-size">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
           </div>
         </div>
       </div>
-      <p>Please review your registration detals before submitting</p>
-      <input type="checkbox" name="checkbox" id="checkbox">I agreed with the event terms and conditions  and privacy policy
+      <p class="review-text">Please review your registration detals before submitting</p>
+      <div class="checkbox"> <input type="checkbox" name="checkbox" id="checkbox" class="check-box"> 
+        <label for="checkbox"> I agreed with the event terms and conditions  and privacy policy</label>
+       
+        <!-- <span class="checkmark"></span> -->
+      </div>
+    
+      <button type="submit" class="registration-button">Register Now</button>
      </form>
-     <form action="/action_page.php">
-      <input list="browsers">
-      <datalist id="browsers">
-        <option value="Internet Explorer">
-        <option value="Firefox">
-        <option value="Chrome">
-        <option value="Opera">
-        <option value="Safari">
-      </datalist>
-      <button type="submit">Register Now</button>
-    </form>
     </div>
   </section>
   <section class="modal">
-    <img src="" alt="">
+    <div class="image">
+      <img src="image/successfully-done-5108472-4288033 1.png" alt="successfully-done" class="successfully-done">
+      <img src="image/successful-man-3025713-2526911 1.png" alt="successful-man" class="successful-man">
+    </div>
+    
     <h2>Congratulations <br> you have successfully Registered!</h2>
-    <p>Yes, it was easy and you did it!
-      check your mail box for next step</p>
-      <button>Back</button>
+    <p>Yes, it was easy and you did it! <br>
+      check your mail box for next step <img src="image/wink-emoji-woman-png-1.png" alt="wink-emoji-woman"> </p>
+      <button class="back-btn" id="back-btn">Back</button>
   </section>
 </body>
 </html>
