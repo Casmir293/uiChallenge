@@ -42,11 +42,22 @@
   </header>
   <section class="register-section">
     <div class="register-left">
+      <span>
+        <img src="image/sata gra.png" alt="star image" class="star1">
+      </span>
     <img class="designer-img" src="image/d-graphic-designer-showing-thumbs-up-png-1.png" alt="graphic-designer-showing-thumbs-up">
+    <span>
+      <img src="image/star.png" alt="star image" class="star2">
+    </span>
+    <span>
+      <img src="image/star-pu.png" alt="star image" class="star3">
+    </span>
     </div>
     <div class="register-right">
-     <form action="where the data is sent to" method="how data is sent" class="registration-form">
+     <form  method="POST" class="registration-form" id="registration-form">
       <h2>Register</h2>
+      <span><img src="image/star.png" alt="star" class="star4"></span>
+     
       <img src="image/3d-graphic-designer-showing-thumbs-up-png 1.png" alt="3d-graphic-designer-showing-thumbs-up" class="little-image">
       <p class="movement-text">Be part of this movement</p> 
       <!-- tiny image add -->
@@ -55,73 +66,73 @@
         <div class="form-flex">
           <div class="name input">
             <label for="name-input">Team's Name</label>
-            <input type="text" name="name" id="name-input" placeholder="Enter the name of your group">
+            <input type="text" name="team_name" id="name-input" placeholder="Enter the name of your group">
           </div>
          
           <div class="phone input">
             <label for="tel">Phone</label>
-            <input type="tel" name="usrtel" id="number-input" placeholder="Enter your phone number">
+            <input type="tel" name="phone_number" id="phone-no" placeholder="Enter your phone number">
           </div>
         </div>
         <div class="form-flex">
           <div class="email input">
             <label for="email-input">Email</label>
-            <input type="email" name="email" id="email-input" placeholder="Enter your email address">
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
           </div>
          
           <div class="topic input">
             <label for="topic-input">Project Topic</label>
-            <input type="text" name="topic" id="topic-input" placeholder="What is your group project topic">
+            <input type="text" name="topic" id="project_topic" placeholder="What is your group project topic">
           </div>
         </div>
         <div class="category-group">
           <div class="category-input">
             <label for="category">Category</label>
-            <input type="text" name="name" id="category" placeholder="Select your category" list="category">
-            <datalist id="category">
-              <option value="Internet Explorer">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
-            </datalist>
+     
+            <select name="custom_category" id="category" required>
+              <!-- Options will be populated dynamically -->
+            </select>
+            
           </div>
          
-          <div class="group-input">
+          <div class="group_size">
             <label for="number-input">Group Size</label>
-            <input type="number" name="number" id="number-input" placeholder="Select" list="group-size">
-        
-            <datalist id="group-size">
-              <option value="Internet Explorer">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
-            </datalist>
+            <select id="group_size" class="custom-select">
+            </select>
+            <ul id="groupSizeOptions" class="custom-options">
+              <!-- Dynamically generated options will be added here -->
+            </ul>
           </div>
         </div>
       </div>
       <p class="review-text">Please review your registration detals before submitting</p>
-      <div class="checkbox"> <input type="checkbox" name="checkbox" id="checkbox" class="check-box"> 
-        <label for="checkbox"> I agreed with the event terms and conditions  and privacy policy</label>
+      <div class="checkbox"> 
+        <input type="checkbox" name="checkbox" id="checkbox" class="check-box"> 
+        <label for="checkbox"> I agreed with the event terms and conditions and privacy policy</label>
        
-        <!-- <span class="checkmark"></span> -->
       </div>
-    
       <button type="submit" class="registration-button">Register Now</button>
      </form>
+     <span><img src="image/star.png" alt="star" class="star5"></span>
     </div>
   </section>
-  <section class="modal">
-    <div class="image">
-      <img src="image/successfully-done-5108472-4288033 1.png" alt="successfully-done" class="successfully-done">
-      <img src="image/successful-man-3025713-2526911 1.png" alt="successful-man" class="successful-man">
+  <section class="modal" id="modal">
+    <div class="modal-content">
+      <span><img src="image/sata gra.png" alt="star"></span>
+      <div class="image">
+        <img src="image/successfully-done-5108472-4288033 1.png" alt="successfully-done" class="successfully-done">
+        <img src="image/successful-man-3025713-2526911 1.png" alt="successful-man" class="successful-man">
+      </div>
+      
+      <h2>Congratulations <br> you have successfully Registered!</h2>
+      <p>Yes, it was easy and you did it! <br>
+        check your mail box for next step <img src="image/wink-emoji-woman-png-1.png" alt="wink-emoji-woman"> </p>
+        <button class="back-btn" id="back-btn">Back</button>
+        <span><img src="image/star.png" alt="star" class="star6"></span>
+        <span><img src="image/star-pu.png" alt="star" class="star7"></span>
     </div>
-    
-    <h2>Congratulations <br> you have successfully Registered!</h2>
-    <p>Yes, it was easy and you did it! <br>
-      check your mail box for next step <img src="image/wink-emoji-woman-png-1.png" alt="wink-emoji-woman"> </p>
-      <button class="back-btn" id="back-btn">Back</button>
+  
   </section>
+  <script src="register.js"></script>
 </body>
 </html>

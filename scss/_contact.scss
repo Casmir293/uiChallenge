@@ -1,5 +1,6 @@
 @import '_color';
 @import '_font';
+
 // Contact-header
 body {
   height: 140vh;
@@ -26,6 +27,7 @@ body {
   height: 25px;
   margin-top: 50px;
   margin-left: 205px;
+  animation: pulse 2s infinite;
 }
 .star-img-2 {
   width: 26px;
@@ -34,6 +36,7 @@ body {
   position: absolute;
   margin-top: -50px;
   margin-left: 500px;
+  animation: pulse 2s infinite;
 }
 .star-img-3 {
   width: 30px;
@@ -43,6 +46,7 @@ body {
   flex-shrink: 0;
   margin-top: -143px;
   margin-left: 15px;
+  animation: pulse 2s infinite;
 }
 .star-img-4 {
   width: 26px;
@@ -51,6 +55,18 @@ body {
   position: absolute;
   margin-left: 625px;
   margin-top: -50px;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1); /* Scale the image up at 50% */
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 .contact-section {
   width: 100%;
@@ -94,7 +110,7 @@ body {
     margin: -5px 5px 0 5px;
   }
   .X-icon {
-    margin: -5px 5px 0 5px;
+    margin: 5px 5px 2px 5px;
   }
 
 //  Right view
@@ -113,28 +129,47 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: block;
 }
-h3 {
+.contact-form h3 {
   font-family: $text-font;
   color: $light-purple;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
 }
-h3:first-child {
+.contact-form h3:first-child {
   margin-top: 55px;
 }
 .form-text {
   visibility: hidden;
 }
-.name-input, .email-input, .team-name, .topic-input {
+.contact-form input {
   background-color: transparent;
   border: solid 1px #fff;
   padding: 10px;
+  font-family: $text-font;
+
  
 }
-input::placeholder {
+// input::placeholder {
+//   color: #fff;
+//   font-family: $text-font;
+
+// }
+// input:focus{
+//   color: #fff;
+  
+// }
+.contact-form input::placeholder {
   color: #fff;
   font-family: $text-font;
+}
+.contact-form input:focus{
+  background: transparent;
+  border: 1px solid white;
+}
+ .contact-form input:hover{
+  color: #fff;
+  
 }
 .mobile-input {
   display: none;
@@ -150,13 +185,16 @@ input::placeholder {
 .message-input {
   margin-top: 29px;
   width: 100%;
-  height: 70px;
+  // height: 70px;
+  padding: 10px;
+  padding-bottom: 50px;
   border: solid 1px #fff;
   background-color: transparent;
 }
 .message-input::placeholder {
   color: #fff;
   margin-left: 10px;
+  font-family: $text-font;
 }
 .submit-btn {
   width: 30%;
@@ -169,22 +207,22 @@ input::placeholder {
   margin: 30px auto;
   font-size: 0.9rem;
   font-weight: 400;
-
-  a {
-    text-decoration: none;
+ font-family: $text-font;
+     border: none;
     color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    cursor: pointer;
+ 
 }
 .form-contact-socials {
   display: none;
 }
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   body {
     height: 130vh;
+    scroll-behavior: smooth;
   }
   .header {
     display: none;
@@ -192,6 +230,9 @@ input::placeholder {
   .mobile-header {
     visibility: visible;
     border: none;
+  }
+  .contact-backbtn{
+    cursor: pointer;
   }
   svg {
     margin-top: 30px;
@@ -226,7 +267,7 @@ input::placeholder {
     height: 14px;
     flex-shrink: 0;
     position: absolute;
-    margin-left: 461px;
+    margin-left: 351px;
     margin-top: -220px;
   }
 
@@ -238,7 +279,7 @@ input::placeholder {
   width: 100%;
   margin-left: 0;
 }
-.contact-section .right .form {
+ .contact-form {
   margin: 0 auto;
   width: 100%;
   padding: 0 40px;
@@ -268,13 +309,31 @@ p.form-text {
   margin-left: -70px;
   font-weight: 400;
 }
-input {
-  padding: 15px;
+.contact-form input {
+  
   border-radius: 4px;
+  color: #fff;
 }
-input::placeholder {
+.team-name{
+  padding: 10px;
+}
+.topic-input{
+  padding: 10px;
+}
+.email-input{
+  padding: 10px;
+}
+.contact-form input::placeholder {
   color: #fff;
   font-family: $text-font;
+}
+.contact-form input:focus{
+  background: transparent;
+  border: #fff;
+}
+ .contact-form input:hover{
+  color: #fff;
+  
 }
 .desktop-input {
   display: none;
@@ -295,15 +354,22 @@ input::placeholder {
   width: 100%;
 }
 .message-input {
-  margin-top: 39px;
+  margin-top: 29px;
   width: 100%;
-  height: 150px;
+  height: 100px;
+  border: solid 1px #fff;
+  background-color: transparent;
 }
+.message-input::placeholder{
+  color: #fff;
+}
+
 
 .form-contact-socials {
   display: block;
   text-align: center;
   margin-top: 50px;
+  padding-bottom: 20px;
 }
 .form-contact-socials p {
   font-family: $text-font;
@@ -319,6 +385,9 @@ input::placeholder {
 .X-icon {
   margin: auto 10px;
 }
+.contact-icon{
+padding-bottom: 100px;
+ }
 .contact-icon a {
   text-decoration: none;
  }
