@@ -1,5 +1,16 @@
+
+
 @import "reset";
-@import "variables";
+@import "font";
+@import "header-nav";
+@import "color";
+@import "contact";
+@import "register";
+// @import "variables";
+// @import "feature";
+
+@import "reset";
+// @import "variables";
 @import "header-nav";
 @import "feature";
 @import "detail";
@@ -9,8 +20,9 @@
 @import "partners";
 @import "privacy";
 @import "footer";
+
 body {
   background-color: $dark-purple;
   color: $white;
-  font-family: "Montserrat", sans-serif;
+  font-family: $text-font;
 }
