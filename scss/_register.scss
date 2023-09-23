@@ -6,38 +6,38 @@
 .header {
   border-bottom: none;
 }
-.laptop-menu a { 
+.laptop-menu a {
   font-size: 14px;
 }
 .contact-nav {
   font-weight: 600;
   background:
   //  linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
-  $gradient;
+    $gradient;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.register-button{
+.register-button {
   border: 2px solid transparent;
   border-image: $gradient;
   border-image-slice: 1;
   width: 10.75rem;
-    height: 3.3125rem;
-    flex-shrink: 0;
-    border-radius: 0.25rem;
-    margin-left: 50px;
-    a {
-      text-decoration: none;
-      color: $white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
+  height: 3.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  margin-left: 50px;
+  a {
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }
 
- // STAR IMAGES
+// STAR IMAGES
 .star1 {
   width: 12px;
   height: 15px;
@@ -69,7 +69,9 @@
   height: 10px;
   flex-shrink: 0;
   position: absolute;
-  margin:  405px;
+
+  margin-left: 595px;
+
   margin-top: -50px;
   animation: pulse 2s infinite;
 }
@@ -102,19 +104,27 @@
 }
 @keyframes pulse {
   0% {
+
+    
+    
+
       transform: scale(1.7);
+
   }
   50% {
-      transform: scale(1.1); /* Scale the image up at 50% */
+    transform: scale(1.1); /* Scale the image up at 50% */
   }
   100% {
+
       transform: scale(1.7);
+
   }
 }
-.register-section{
+.register-section {
   width: 100%;
   display: flex;
   align-items: center;
+
   flex-shrink: 0;
   // justify-content: space-evenly;
 }
@@ -160,27 +170,34 @@ margin-bottom: 23px;
   margin-top: 50px;
   width: 100%;
   padding: 65px 90px;
+
   height: auto;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
-.form-flex{ 
+.form-flex {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
+
+
 input{
+
   color: #fff;
 
 }
-.input{
-  
+.input {
   display: flex;
   flex-direction: column;
+
+}
+.input label {
+  font-size: 12px;
+
   margin-bottom: 19px;
   
 }
@@ -188,8 +205,9 @@ input{
 .input label{
   font-size: 11px;
   margin-bottom: 11px;
+
 }
-.input input{
+.input input {
   background-color: transparent;
   border: solid 1px #fff;
   border-radius: 5px;
@@ -199,6 +217,7 @@ input{
 .input input:focus{
  outline: none;
 }
+
 .input input::placeholder{
  font-family: $text-font;
   font-size: 11px;
@@ -218,6 +237,7 @@ input{
   outline: none;
  }
 .category-input  select{
+
   background-color: transparent;
   border: solid 1px #fff;
   border-radius: 5px;
@@ -225,6 +245,7 @@ input{
   color: #fff;
   margin: 0  20px 0 0;
 }
+
 .group_size select{
   background-color: transparent;
   border: solid 1px #fff;
@@ -233,12 +254,15 @@ input{
   cursor: pointer;
   color: #fff;
   margin: 0  20px 0 0;
+
 }
 .category-input {
   width: 50%;
   display: flex;
   flex-direction: column;
+
   label{
+
     font-size: 12px;
   }
 }
@@ -248,17 +272,19 @@ input{
   display: flex;
   flex-direction: column;
   width: 50%;
- 
+
   label{
     font-size: 10px;
+
   }
-  
 }
+
 
 .review-text{
   margin-top: 33px;
   color: #FF26B9;
   font-size: 12px;
+
 
 }
 // Terms and condition
@@ -266,11 +292,14 @@ input{
 
 
 
+
+
 .checkbox{
   margin-top: 16px;
   font-size: 12px;
+
 }
-.registration-button{
+.registration-button {
   border-radius: 5px;
   width: 100%;
   height: 50px;
@@ -281,17 +310,17 @@ input{
   background: $gradient;
  
 }
-.little-image{
-    display: none;
+.little-image {
+  display: none;
 }
 
 // modal
-.modal{
+.modal {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  margin: auto ;
+  margin: auto;
   width: 100%;
   text-align: center;
   height: 100vh;
@@ -302,36 +331,34 @@ input{
 }
 
 .modal-content {
- 
   margin: 50px auto;
   padding: 20px;
-
 }
-.image{
+.image {
   display: flex;
   position: relative;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
 }
 
-.successful-man{
-position: absolute;
-// right: 100px;
-margin-left: 120px;
+.successful-man {
+  position: absolute;
+  // right: 100px;
+  margin-left: 120px;
 }
-.modal h2{
+.modal h2 {
   font-size: 20px;
   line-height: 1.5;
   font-family: $text-font;
 }
-.modal p{
+.modal p {
   font-family: $text-font;
   padding: 0 50px;
   font-size: 12px;
   line-height: 1.2;
   margin-top: 10px;
 }
-.modal .back-btn{
+.modal .back-btn {
   padding: 15px;
   background: $gradient;
   color: #fff;
@@ -340,6 +367,7 @@ margin-left: 120px;
   margin-top: 20px;
   margin-bottom: 100px;
 }
+
 @media screen and (max-width: 900px){
   .body{
     height: 140vh;
@@ -359,138 +387,134 @@ margin-left: 120px;
      padding: 40px 60px;
     background:none;
     box-shadow: none; 
+
   }
-  .register-left{
+  .register-left {
     display: none;
   }
-  .register-right{
-    width: 100%;
-    
-
-  }
-  .register-right form{
+  .register-right {
     width: 100%;
   }
-  .registration-form h2{
-   margin-top: -50px;
-  
+  .register-right form {
+    width: 100%;
   }
-  .little-image{
-display: block;
-margin: 0 auto;
-
+  .registration-form h2 {
+    margin-top: -50px;
   }
-  .form-flex{ 
+  .little-image {
     display: block;
-  
+    margin: 0 auto;
   }
+  .form-flex {
+    display: block;
+  }
+
 
   .input{
     margin-bottom: 19px;
     display : flex;
     justify-content: center;
   
+
   }
- 
- 
-  .input input::placeholder{
- 
+
+  .input input::placeholder {
     font-size: 11px;
-  } 
- 
- 
+  }
+
   .category-input {
     width: 70%;
-   
   }
-  
+
  .group_size {
   width: 30%;
   margin-left: 10px;
   margin-top: 2px;
+
   }
- 
-  .review-text{
+
+  .review-text {
     margin-top: 15px;
+
     color: #FF26B9;
     font-size: 10px;
 
   font-style:  italic;
   margin-bottom: 10px;
+
   }
-  .break-text{
+  .break-text {
     display: block;
   }
   .checkbox {
     margin-left: 6px;
   }
 
-
-  .registration-button{
+  .registration-button {
     width: 40%;
-   display: block;
-   margin: 40px auto  0;
-  
-  
-    
+    display: block;
+    margin: 40px auto 0;
   }
-  
+
+
   // STAR IMAGES
-.star1 {
-  width: 8px;
-  height: 10px;
+  .star1 {
+    width: 15px;
+    height: 15px;
+    // margin-top: 50px;
+    // margin-left: 205px;
+  }
+  .star2 {
+    width: 15px;
+    height: 15px;
+    // flex-shrink: 0;
+    // position: absolute;
+    // margin-top: -50px;
+    // margin-left: 100px;
+    animation: pulse 2s infinite;
+  }
+  .star3 {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 3;
+    flex-shrink: 0;
+    margin-top: -143px;
+    margin-left: 15px;
+    animation: pulse 2s infinite;
+  }
+  .star4 {
+    width: 15px;
+    height: 20px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 355px;
+    margin-top: -50px;
+    animation: pulse 2s infinite;
+  }
+  .star5 {
+    width: 15px;
+    height: 20px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 355px;
+    margin-top: -50px;
+    animation: pulse 2s infinite;
+  }
+  .star6 {
+    width: 15px;
+    height: 15px;
 
+    margin-top: -450px;
+    animation: pulse 2s infinite;
+    z-index: 4;
+  }
+  .star7 {
+    width: 9px;
+    height: 15px;
+    flex-shrink: 0;
+    position: absolute;
+    animation: pulse 2s infinite;
+    z-index: 4;
+  }
 }
-.star2 {
-  width: 8px;
-  height: 10px;
-  animation: pulse 2s infinite;
-}
-.star3 {
-  width: 8px;
-  height: 10px; 
-  position: absolute;
-  z-index: 3;
-  flex-shrink: 0;
-  margin-top: -143px;
-  margin-left: 15px;
-  animation: pulse 2s infinite;
-}
-.star4 {
-  width: 15px;
-  height: 20px;
-  flex-shrink: 0;
-  position: absolute;
-  margin-left:355px;
-  margin-top: -50px;
-  animation: pulse 2s infinite;
-}
-.star5 {
-  width: 8px;
-  height: 10px;
-  flex-shrink: 0;
-  position: absolute;
-  margin-left: 355px;
-  margin-top: -50px;
-  animation: pulse 2s infinite;
-}
-.star6 {
-  width: 8px;
-  height: 10px;
- 
-  margin-top: -450px;
-  animation: pulse 2s infinite;
-  z-index: 4;
-}
-.star7 {
-  width: 9px;
-  height: 15px;
-  flex-shrink: 0;
-  position: absolute;
-  animation: pulse 2s infinite;
-  z-index: 4;
-}
-  
-}
-
-
