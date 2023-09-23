@@ -19,6 +19,13 @@ header {
   padding: 1.5rem;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.18);
 }
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+header a:hover {
+  color: white;
+}
 
 h2 {
   font-family: "Clash Display", sans-serif;
@@ -127,6 +134,9 @@ h2 span {
     font-weight: 400;
     line-height: normal;
     cursor: pointer;
+  }
+  ul li a:hover {
+    color: #d434fe;
   }
 }
 .feature {
@@ -1211,6 +1221,13 @@ footer {
   line-height: normal;
   padding-bottom: 1rem;
 }
+.subfoot-1 .foot-head a {
+  text-decoration: none;
+  color: #fff;
+}
+.subfoot-1 .foot-head a:hover {
+  color: white;
+}
 .subfoot-1 .foot-head span {
   color: #d434fe;
 }
@@ -1225,7 +1242,14 @@ footer {
   font-weight: 400;
   line-height: 172.4%;
 }
-.subfoot-1 .foot-foot span {
+.subfoot-1 .foot-foot a {
+  text-decoration: none;
+  color: #fff;
+}
+.subfoot-1 .foot-foot a:hover {
+  color: #d434fe;
+}
+.subfoot-1 .foot-foot a span {
   border-left: 1px solid #d434fe;
   padding-left: 10px;
   margin-left: 10px;
@@ -1254,6 +1278,9 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: 172.4%;
+}
+.subfoot-2 .sublist ul li a:hover {
+  color: #d434fe;
 }
 .subfoot-2 .social-media span {
   color: #d434fe;
@@ -1288,6 +1315,9 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+.subfoot-3 div a:hover {
+  color: #d434fe;
+}
 .subfoot-3 div img {
   display: inline;
   padding-right: 1rem;
@@ -1306,6 +1336,13 @@ footer {
   font-weight: 400;
   line-height: normal;
 }
+.main-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.main-footer a:hover {
+  color: #d434fe;
+}
 
 @media (min-width: 992px) {
   footer {
@@ -1317,7 +1354,6 @@ footer {
     justify-content: center;
     justify-items: center;
     align-items: start;
-    gap: 5%;
   }
   .subfoot-1 .foot-head {
     font-size: 2rem;

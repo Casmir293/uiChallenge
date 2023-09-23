@@ -22,7 +22,9 @@
     <!-- Header -->
     <header class="header">
       <section>
-        <h2>get<span>linked</span></h2>
+        <a href="#"
+          ><h2>get<span>linked</span></h2></a
+        >
       </section>
 
       <section class="menu-icon">
@@ -43,9 +45,9 @@
       <!-- Laptop Menu Nav -->
       <nav class="laptop-menu">
         <ul>
-          <li><a href="#">Timeline</a></li>
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">FAQs</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#faq">FAQs</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="register-btn"><a href="#">Register</a></div>
@@ -101,9 +103,9 @@
         </div>
 
         <ul class="mobile-ul">
-          <li><a href="#">Timeline</a></li>
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">FAQs</a></li>
+          <li><a href="#timeline" onclick="hideMobileMenu()">Timeline</a></li>
+          <li><a href="#overview" onclick="hideMobileMenu()">Overview</a></li>
+          <li><a href="#faq" onclick="hideMobileMenu()">FAQs</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="register-btn"><a href="#">Register</a></div>
@@ -161,7 +163,7 @@
       </section>
 
       <!-- Details -->
-      <section class="details">
+      <section class="details" id="overview">
         <section class="detail-flex detail-flex-1">
           <img src="img/big-idea.png" alt="The Big Idea" />
           <div>
@@ -240,7 +242,7 @@
       </section>
 
       <!-- FAQ -->
-      <section class="faq">
+      <section class="faq" id="faq">
         <section class="faq-top">
           <p class="faq-heading">Frequently Ask <span>Question</span></p>
           <p class="faq-paragraph">
@@ -399,7 +401,7 @@
       </section>
 
       <!-- Timeline -->
-      <section class="timeline">
+      <section class="timeline" id="timeline">
         <div class="timeline-head">
           <p class="timeline-subhead">Timeline</p>
           <p class="timeline-subbody">
@@ -690,7 +692,7 @@
       </section>
 
       <!-- Privacy -->
-      <section class="privacy">
+      <section class="privacy" id="privacy">
         <section class="privacy-writeup">
           <div class="privacy-head">Privacy Policy and <span>Terms</span></div>
           <div class="privacy-body">
@@ -770,13 +772,17 @@
     <footer>
       <section class="subfooter">
         <div class="subfoot-1">
-          <div class="foot-head">get<span>linked</span></div>
+          <div class="foot-head">
+            <a href="#">get<span>linked</span></a>
+          </div>
           <div class="foot-body">
             Getlinked Tech Hackathon is a technology innovation program
             established by a group of organizations with the aim of showcasing
             young and talented individuals in the field of technology
           </div>
-          <div class="foot-foot">Terms of Use <span>Privacy Policy</span></div>
+          <div class="foot-foot">
+            <a href="#privacy">Terms of Use <span>Privacy Policy</span></a>
+          </div>
         </div>
         <div class="subfoot-2">
           <div class="links">Useful Links</div>
@@ -815,12 +821,19 @@
           </div>
           <div class="address">
             <div><img src="img/Vector (2).svg" alt="address" /></div>
-            <p>27,Alara Street Yaba 100012 Lagos State</p>
+            <p>
+              <a
+                href="https://www.google.com/maps/place/27+Alara+St,+Sabo+yaba+101245,+Lagos/@6.5077727,3.3818753,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8cf3fae871f1:0x33fc1ca3c387cf64!8m2!3d6.5077674!4d3.3844502!16s%2Fg%2F11h2dm_gnm?entry=ttu"
+                target="_blank"
+                >27,Alara Street Yaba 100012 Lagos State</a
+              >
+            </p>
           </div>
         </div>
       </section>
       <section class="main-footer">
-        All rights reserved. &copy; getlinked Ltd.
+        All rights reserved. &copy;
+        <a href="https://getlinked.ai">getlinked Ltd.</a>
       </section>
     </footer>
   </body>
