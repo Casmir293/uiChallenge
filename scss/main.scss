@@ -1,4 +1,15 @@
 
+@import "reset";
+@import "variables";
+@import "header-nav";
+@import "feature";
+@import "detail";
+@import "faq";
+@import "timeline";
+@import "prizes";
+@import "partners";
+@import "privacy";
+@import "footer";
 body {
   background-color: $dark-purple;
   color: $white;
