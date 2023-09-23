@@ -419,7 +419,7 @@ margin: 0 auto;
     display: block;
   }
   .checkbox {
-    margin-left: 46px;
+    margin-left: 6px;
   }
 
 
@@ -432,6 +432,66 @@ margin: 0 auto;
     
   }
   
+  // STAR IMAGES
+.star1 {
+  width: 15px;
+  height: 15px;
+  // margin-top: 50px;
+  // margin-left: 205px;
+}
+.star2 {
+  width: 15px;
+  height: 15px;
+  // flex-shrink: 0;
+  // position: absolute;
+  // margin-top: -50px;
+  // margin-left: 100px;
+  animation: pulse 2s infinite;
+}
+.star3 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 3;
+  flex-shrink: 0;
+  margin-top: -143px;
+  margin-left: 15px;
+  animation: pulse 2s infinite;
+}
+.star4 {
+  width: 15px;
+  height: 20px;
+  flex-shrink: 0;
+  position: absolute;
+  margin-left:355px;
+  margin-top: -50px;
+  animation: pulse 2s infinite;
+}
+.star5 {
+  width: 15px;
+  height: 20px;
+  flex-shrink: 0;
+  position: absolute;
+  margin-left: 355px;
+  margin-top: -50px;
+  animation: pulse 2s infinite;
+}
+.star6 {
+  width: 15px;
+  height: 15px;
+ 
+  margin-top: -450px;
+  animation: pulse 2s infinite;
+  z-index: 4;
+}
+.star7 {
+  width: 9px;
+  height: 15px;
+  flex-shrink: 0;
+  position: absolute;
+  animation: pulse 2s infinite;
+  z-index: 4;
+}
   
 }
 
