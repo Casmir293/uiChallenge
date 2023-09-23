@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/dist/css/main.css" />
     <link rel="stylesheet" href="./fonts/display.css" />
     <link
@@ -16,7 +22,9 @@
     <!-- Header -->
     <header class="header">
       <section>
-        <h2>get<span>linked</span></h2>
+        <a href="#"
+          ><h2>get<span>linked</span></h2></a
+        >
       </section>
 
       <section class="menu-icon">
@@ -37,6 +45,7 @@
       <!-- Laptop Menu Nav -->
       <nav class="laptop-menu">
         <ul>
+          
           <li><a href="#">Timeline</a></li>
           <li><a href="#">Overview</a></li>
           <li><a href="#">FAQs</a></li>
@@ -95,9 +104,9 @@
         </div>
 
         <ul class="mobile-ul">
-          <li><a href="#">Timeline</a></li>
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">FAQs</a></li>
+          <li><a href="#timeline" onclick="hideMobileMenu()">Timeline</a></li>
+          <li><a href="#overview" onclick="hideMobileMenu()">Overview</a></li>
+          <li><a href="#faq" onclick="hideMobileMenu()">FAQs</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="register-btn"><a href="#">Register</a></div>
@@ -106,6 +115,7 @@
 
     <!-- Main Content -->
     <main>
+      <!-- Features -->
       <div class="contain">
         <div class="igniting">
           <b>Igniting a Revolution in <span>HR Innovation</span></b>
@@ -152,7 +162,686 @@
           <img class="light-img" src="img/lights.png" alt="light" />
         </aside>
       </section>
+
+      <!-- Details -->
+      <section class="details" id="overview">
+        <section class="detail-flex detail-flex-1">
+          <img src="img/big-idea.png" alt="The Big Idea" />
+          <div>
+            <p class="subtopic subtopic-1">
+              Introduction to getlinked <span>tech Hackathon 1.0</span>
+            </p>
+            <p class="write-ups">
+              Our tech hackathon is a melting pot of visionaries, and its
+              purpose is as clear as day: to shape the future. Whether you're a
+              coding genius, a design maverick, or a concept wizard, you'll have
+              the chance to transform your ideas into reality. Solving
+              real-world problems, pushing the boundaries of technology, and
+              creating solutions that can change the world, that's what we're
+              all about!
+            </p>
+          </div>
+        </section>
+
+        <section class="detail-flex detail-flex-2">
+          <div>
+            <p class="subtopic">Rules and <span>Guidelines</span></p>
+            <p class="write-ups write-ups-2">
+              Our tech hackathon is a melting pot of visionaries, and its
+              purpose is as clear as day: to shape the future. Whether you're a
+              coding genius, a design maverick, or a concept wizard, you'll have
+              the chance to transform your ideas into reality. Solving
+              real-world problems, pushing the boundaries of technology, and
+              creating solutions that can change the world, that's what we're
+              all about!
+            </p>
+          </div>
+          <img src="img/sitting-lady.png" alt="Sitting Lady" />
+        </section>
+
+        <section class="detail-flex detail-flex-3">
+          <img class="detail-img-3" src="img/team.png" alt="Team Work" />
+          <div>
+            <p class="subtopic">Judging Criteria <span>Key attributes</span></p>
+
+            <div class="write-ups">
+              <p>
+                <b>Innovation and Creativity:</b> Evaluate the uniqueness and
+                creativity of the solution. Consider whether it addresses a
+                real-world problem in a novel way or introduces innovative
+                features.
+              </p>
+              <p>
+                <b>Functionality:</b> Assess how well the solution works. Does
+                it perform its intended functions effectively and without major
+                issues? Judges would consider the completeness and robustness of
+                the solution.
+              </p>
+              <p>
+                <b>Impact and Relevance:</b> Determine the potential impact of
+                the solution in the real world. Does it address a significant
+                problem, and is it relevant to the target audience? Judges would
+                assess the potential social, economic, or environmental
+                benefits.
+              </p>
+              <p>
+                <b>Technical Complexity:</b> Evaluate the technical
+                sophistication of the solution. Judges would consider the
+                complexity of the code, the use of advanced technologies or
+                algorithms, and the scalability of the solution.
+              </p>
+              <p>
+                <b>Adherence to Hackathon Rules:</b> Judges will Ensure that the
+                team adhered to the rules and guidelines of the hackathon,
+                including deadlines, use of specific technologies or APIs, and
+                any other competition-specific requirements.
+              </p>
+            </div>
+            <div class="register-btn"><a href="#">Read More</a></div>
+          </div>
+        </section>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <section class="faq-top">
+          <p class="faq-heading">Frequently Ask <span>Question</span></p>
+          <p class="faq-paragraph">
+            We got answers to the questions that you might want to ask about
+            <span>getlinked Hackathon 1.0</span>
+          </p>
+
+          <!-- Accordion -->
+          <div class="faq-accordion">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Can I work on a project I started before the hackathon?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">Yes, you can.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    What happens if I need help during the hackathon?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You can always reach out to our agents at any point in time.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    What happens if I don't have an idea for a project?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Reachout to us via our email and we'll clarify you further
+                    on how to go about the project.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Can I join a team or do I have to come with one?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">Both options are acceptable</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    What happens after the hackathon ends
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The winners would be awarded accordinly
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    Can I work on a project I started before the hackathon?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">Sure! you can.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq-bottom">
+          <img src="img/thinking-man.png" alt="" />
+        </section>
+      </section>
+
+      <!-- Timeline -->
+      <section class="timeline" id="timeline">
+        <div class="timeline-head">
+          <p class="timeline-subhead">Timeline</p>
+          <p class="timeline-subbody">
+            Here is the breakdown of the time we anticipate using for the
+            upcoming event.
+          </p>
+        </div>
+        <!-- (Mobile-Phone) -->
+        <section class="timeline-phone">
+          <div class="time-wrapper">
+            <div class="time-content">
+              <p class="time-content-head">Hackathon Announcement</p>
+              <p class="time-content-body">
+                The getlinked tech hackathon 1.0 is formally announced to the
+                general public and teams begin to get ready to register
+              </p>
+            </div>
+            <div class="num-date">
+              <div class="time-num">1</div>
+              <div class="time-date">November 18, 2023</div>
+            </div>
+          </div>
+
+          <div class="time-wrapper">
+            <div class="time-content">
+              <p class="time-content-head">Teams Registration begins</p>
+              <p class="time-content-body">
+                Interested teams can now show their interest in the getlinked
+                tech hackathon 1.0 2023 by proceeding to register
+              </p>
+            </div>
+            <div class="num-date">
+              <div class="time-num">2</div>
+              <div class="time-date">November 18, 2023</div>
+            </div>
+          </div>
+
+          <div class="time-wrapper">
+            <div class="time-content">
+              <p class="time-content-head">Teams Registration ends</p>
+              <p class="time-content-body">
+                Interested Participants are no longer Allowed to register
+              </p>
+            </div>
+            <div class="num-date">
+              <div class="time-num">3</div>
+              <div class="time-date">November 18, 2023</div>
+            </div>
+          </div>
+
+          <div class="time-wrapper">
+            <div class="time-content">
+              <p class="time-content-head">
+                Announcement of the accepted teams and ideas
+              </p>
+              <p class="time-content-body">
+                All teams whom idea has been accepted into getlinked tech
+                hackathon 1.0 2023 are formally announced
+              </p>
+            </div>
+            <div class="num-date">
+              <div class="time-num">4</div>
+              <div class="time-date">November 18, 2023</div>
+            </div>
+          </div>
+
+          <div class="time-wrapper">
+            <div class="time-content">
+              <p class="time-content-head">
+                Getlinked Hackathon 1.0 Offically Begins
+              </p>
+              <p class="time-content-body">
+                Accepted teams can now proceed to build their ground breaking
+                skill driven solutions
+              </p>
+            </div>
+            <div class="num-date">
+              <div class="time-num">5</div>
+              <div class="time-date">November 18, 2023</div>
+            </div>
+          </div>
+
+          <div class="time-wrapper">
+            <div class="time-content">
+              <p class="time-content-head">Demo Day</p>
+              <p class="time-content-body">
+                Teams get the opportunity to pitch their projects to judges. The
+                winner of the hackathon will also be announced on this day
+              </p>
+            </div>
+            <div class="num-date">
+              <div class="time-num">6</div>
+              <div class="time-date">November 18, 2023</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- (Desktop) -->
+        <section class="timeline-desktop">
+          <div class="desk-wrapper">
+            <div class="desk-details text-end">
+              <div class="desk-head">Hackathon Announcement</div>
+              <div class="desk-body">
+                The getlinked tech hackathon 1.0 is formally announced to the
+                general public and teams begin to get ready to register
+              </div>
+            </div>
+            <div class="desk-num">
+              <p></p>
+              <div>1</div>
+            </div>
+            <div class="desk-date">November 18, 2023</div>
+          </div>
+
+          <div class="desk-wrapper">
+            <div class="desk-date text-end">November 18, 2023</div>
+            <div class="desk-num">
+              <p></p>
+              <div>2</div>
+            </div>
+            <div class="desk-details">
+              <div class="desk-head">Teams Registration begins</div>
+              <div class="desk-body">
+                Interested teams can now show their interest in the getlinked
+                tech hackathon 1.0 2023 by proceeding to register
+              </div>
+            </div>
+          </div>
+
+          <div class="desk-wrapper">
+            <div class="desk-details text-end">
+              <div class="desk-head">Teams Registration ends</div>
+              <div class="desk-body">
+                Interested Participants are no longer Allowed to register
+              </div>
+            </div>
+            <div class="desk-num">
+              <p></p>
+
+              <div>3</div>
+            </div>
+            <div class="desk-date">November 18, 2023</div>
+          </div>
+
+          <div class="desk-wrapper">
+            <div class="desk-date text-end">November 18, 2023</div>
+            <div class="desk-num">
+              <p></p>
+              <div>4</div>
+            </div>
+            <div class="desk-details">
+              <div class="desk-head">
+                Announcement of the accepted teams and ideas
+              </div>
+              <div class="desk-body">
+                All teams whom idea has been accepted into getlinked tech
+                hackathon 1.0 2023 are formally announced
+              </div>
+            </div>
+          </div>
+
+          <div class="desk-wrapper">
+            <div class="desk-details text-end">
+              <div class="desk-head">
+                Getlinked Hackathon 1.0 Offically Begins
+              </div>
+              <div class="desk-body">
+                Accepted teams can now proceed to build their ground breaking
+                skill driven solutions
+              </div>
+            </div>
+            <div class="desk-num">
+              <p></p>
+              <div>5</div>
+            </div>
+            <div class="desk-date">November 18, 2023</div>
+          </div>
+
+          <div class="desk-wrapper">
+            <div class="desk-date text-end">November 18, 2023</div>
+            <div class="desk-num">
+              <p></p>
+              <div>6</div>
+            </div>
+            <div class="desk-details">
+              <div class="desk-head">Demo Day</div>
+              <div class="desk-body">
+                Teams get the opportunity to pitch their projects to judges. The
+                winner of the hackathon will also be announced on this day
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Prizes -->
+      <section class="prizes">
+        <section class="prizes-top">
+          <p class="prize-head">Prizes and <span>Rewards</span></p>
+          <p class="prize-body">
+            Highlight of the prizes or rewards for winners and for participants.
+          </p>
+        </section>
+
+        <section class="prize-bottom">
+          <div class="trophy-img">
+            <img src="img/trophy.png" alt="Trophy" />
+          </div>
+          <div class="medal-img">
+            <div class="silver">
+              <img src="img/silver.png" alt="silver" />
+              <div class="small">
+                <b>2nd</b> <br />
+                Runner <br />
+                <span>N300,000</span>
+              </div>
+            </div>
+            <div class="gold">
+              <img src="img/gold.png" alt="gold" />
+
+              <div class="large">
+                <b>1st</b> <br />
+                Runner <br />
+                <span>N400,000</span>
+              </div>
+            </div>
+            <div class="bronze">
+              <img src="img/bronze.png" alt="bronze" />
+
+              <div class="small">
+                <b>3rd</b> <br />
+                Runner <br />
+                <span>N150,000</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Partners -->
+      <section class="partner">
+        <section class="partner-top">
+          <p class="partner-head">Partners and Sponsors</p>
+          <p class="partner-body">
+            Getlinked Hackathon 1.0 is honored to have the following major
+            companies as its partners and sponsors
+          </p>
+        </section>
+
+        <section class="partner-bottom">
+          <div class="sponsor-border">
+            <div class="sponsor-top">
+              <div class="sponsor">
+                <img src="img/img-1.png" alt="sponsor" />
+              </div>
+              <div class="sponsor-line"></div>
+              <div class="sponsor">
+                <img src="img/img-2.png" alt="sponsor" />
+              </div>
+              <div class="sponsor-line"></div>
+              <div class="sponsor">
+                <img src="img/img-3.png" alt="sponsor" />
+              </div>
+            </div>
+            <div class="sponsor-center">
+              <div class="hr-line"></div>
+              <div class="hr-line"></div>
+              <div class="hr-line"></div>
+            </div>
+            <div class="sponsor-bottom">
+              <div class="sponsor">
+                <img src="img/img-4.png" alt="sponsor" />
+              </div>
+              <div class="sponsor-line"></div>
+              <div class="sponsor">
+                <div class="paybox">pay<span>box</span></div>
+              </div>
+              <div class="sponsor-line"></div>
+              <div class="sponsor">
+                <div class="vuzual">
+                  <div>Vuzual <span>Plus</span></div>
+                  <p class="design">Design Studios</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Privacy -->
+      <section class="privacy" id="privacy">
+        <section class="privacy-writeup">
+          <div class="privacy-head">Privacy Policy and <span>Terms</span></div>
+          <div class="privacy-body">
+            <p class="privacy-p1">Last updated on September 12, 2023</p>
+            <p class="privacy-p2">
+              Below are our privacy & policy, which outline a lot of goodies.
+              it’s our aim to always take of our participant
+            </p>
+          </div>
+          <div class="privacy-content">
+            <div class="cont-1">
+              At getlinked tech Hackathon 1.0, we value your privacy and are
+              committed to protecting your personal information. This Privacy
+              Policy outlines how we collect, use, disclose, and safeguard your
+              data when you participate in our tech hackathon event. By
+              participating in our event, you consent to the practices described
+              in this policy.
+            </div>
+            <div class="cont-2">
+              <div class="cont-2-a">Licensing Policy</div>
+              <div class="cont-2-b">
+                Here are terms of our Standard License:
+              </div>
+            </div>
+            <div class="cont-3">
+              <div>
+                <img src="img/list terms.svg" alt="list" />
+                <p>
+                  The Standard License grants you a non-exclusive right to
+                  navigate and register for our event
+                </p>
+              </div>
+              <div>
+                <img src="img/list terms.svg" alt="list" />
+                <p>
+                  You are licensed to use the item available at any free source
+                  sites, for your project developement
+                </p>
+              </div>
+            </div>
+            <div class="register-btn">Read More</div>
+          </div>
+        </section>
+        <section class="privacy-graphics">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="249"
+            height="311"
+            viewBox="0 0 249 311"
+            fill="none"
+          >
+            <path
+              d="M249 141.364C249 219.82 195.88 293.188 124.5 311C53.12 293.188 0 219.82 0 141.364V56.5455L124.5 0L249 56.5455V141.364ZM124.5 282.727C176.375 268.591 221.333 205.543 221.333 144.474V74.9227L124.5 30.8173L27.6667 74.9227V144.474C27.6667 205.543 72.625 268.591 124.5 282.727ZM163.233 141.364V120.159C163.233 100.368 143.867 84.8182 124.5 84.8182C105.133 84.8182 85.7667 100.368 85.7667 120.159V141.364C77.4667 141.364 69.1667 149.845 69.1667 158.327V207.805C69.1667 217.7 77.4667 226.182 85.7667 226.182H161.85C171.533 226.182 179.833 217.7 179.833 209.218V159.741C179.833 149.845 171.533 141.364 163.233 141.364ZM145.25 141.364H103.75V120.159C103.75 108.85 113.433 101.782 124.5 101.782C135.567 101.782 145.25 108.85 145.25 120.159V141.364Z"
+              fill="url(#paint0_linear_114_900)"
+              fill-opacity="0.14"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_114_900"
+                x1="124.5"
+                y1="0"
+                x2="124.5"
+                y2="311"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#903AFF" />
+                <stop offset="1" stop-color="#FF26B9" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div><img src="img/privacy.png" alt="privacy" /></div>
+        </section>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="subfooter">
+        <div class="subfoot-1">
+          <div class="foot-head">
+            <a href="#">get<span>linked</span></a>
+          </div>
+          <div class="foot-body">
+            Getlinked Tech Hackathon is a technology innovation program
+            established by a group of organizations with the aim of showcasing
+            young and talented individuals in the field of technology
+          </div>
+          <div class="foot-foot">
+            <a href="#privacy">Terms of Use <span>Privacy Policy</span></a>
+          </div>
+        </div>
+        <div class="subfoot-2">
+          <div class="links">Useful Links</div>
+          <div class="sublist">
+            <ul>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <li><a href="#FAQ">FAQs</a></li>
+              <li><a href="/">Register</a></li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <span>Follow us</span>
+            <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
+              ><img src="img/mdi_instagram.svg" alt="IG"
+            /></a>
+            <a href="https://twitter.com/getlinkedai" target="_blank"
+              ><img src="img/Vector.svg" alt="twitter"
+            /></a>
+            <a href="https://www.facebook.com/getLinkedai" target="_blank"
+              ><img src="img/Vector (1).svg" alt="facebook"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/getlinked-ai/"
+              target="_blank"
+              ><img src="img/ri_linkedin-fill.svg" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="subfoot-3">
+          <div class="contact">Contact Us</div>
+          <div>
+            <img src="img/Group.svg" alt="phone" /><a href="tel:+234 679 81819"
+              >+234 679 81819</a
+            >
+          </div>
+          <div class="address">
+            <div><img src="img/Vector (2).svg" alt="address" /></div>
+            <p>
+              <a
+                href="https://www.google.com/maps/place/27+Alara+St,+Sabo+yaba+101245,+Lagos/@6.5077727,3.3818753,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8cf3fae871f1:0x33fc1ca3c387cf64!8m2!3d6.5077674!4d3.3844502!16s%2Fg%2F11h2dm_gnm?entry=ttu"
+                target="_blank"
+                >27,Alara Street Yaba 100012 Lagos State</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main-footer">
+        All rights reserved. &copy;
+        <a href="https://getlinked.ai">getlinked Ltd.</a>
+      </section>
+    </footer>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
   <script src="js/header-nav.js"></script>
 </html>

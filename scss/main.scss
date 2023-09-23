@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import "_reset";
 @import "_font";
@@ -8,6 +9,20 @@
 // @import "variables";
 // @import "feature";
 
+=======
+
+@import "reset";
+@import "variables";
+@import "header-nav";
+@import "feature";
+@import "detail";
+@import "faq";
+@import "timeline";
+@import "prizes";
+@import "partners";
+@import "privacy";
+@import "footer";
+>>>>>>> 76b468462baa96db738c2152cdd5741086271693
 body {
   background-color: $dark-purple;
   color: $white;

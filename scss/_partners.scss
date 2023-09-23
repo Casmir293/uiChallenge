@@ -1,0 +1,185 @@
+.partner {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid grey;
+  position: relative;
+}
+
+.partner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/img/Purple-Lens-Flare-PNG.png);
+  background-blend-mode: hard-light;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.partner-top {
+  text-align: center;
+  padding: 3rem 3rem 0rem 3rem;
+  .partner-head {
+    font-family: $header-font;
+    margin: auto;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .partner-body {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170.9%;
+  }
+}
+
+.sponsor-border {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
+  img {
+    width: 100%;
+  }
+}
+
+.sponsor-top {
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+  align-items: center;
+  justify-items: center;
+  .sponsor {
+    padding: 5px;
+  }
+  .sponsor-line {
+    width: 2px;
+    height: 45px;
+    background-color: $light-purple;
+  }
+}
+
+.sponsor-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 5px 0px;
+  .hr-line {
+    width: 40px;
+    height: 2px;
+    background-color: $light-purple;
+  }
+}
+
+.sponsor-bottom {
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+  align-items: center;
+  justify-items: center;
+  .sponsor {
+    padding: 5px;
+  }
+  .sponsor-line {
+    width: 2px;
+    height: 40px;
+    background-color: $light-purple;
+  }
+}
+
+.paybox {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71875rem;
+  span {
+    color: #00a3ff;
+  }
+}
+
+.vuzual {
+  div {
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 400;
+    span {
+      color: #f00;
+    }
+  }
+}
+
+.design {
+  font-size: 0.2rem;
+  font-weight: 300;
+  float: right;
+}
+
+// Media Query for Laptops
+@media (min-width: 992px) {
+  .partner::after {
+    background: url(/img/purple-lens.png);
+  }
+
+  .partner-top {
+    padding-top: 5rem;
+    .partner-head {
+      font-size: 2rem;
+    }
+    .partner-body {
+      font-size: 0.875rem;
+    }
+  }
+
+  .sponsor-border {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 8rem 16rem;
+  }
+
+  .sponsor-top {
+    .sponsor {
+      padding: 15px;
+    }
+    .sponsor-line {
+      width: 3px;
+      height: 200px;
+    }
+  }
+
+  .sponsor-bottom {
+    .sponsor {
+      padding: 15px;
+    }
+    .sponsor-line {
+      width: 3px;
+      height: 200px;
+    }
+  }
+
+  .sponsor-center {
+    padding: 10px 0px;
+    .hr-line {
+      width: 200px;
+      height: 3px;
+    }
+  }
+
+  .paybox {
+    font-size: 3rem;
+  }
+
+  .vuzual {
+    div {
+      font-size: 2rem;
+    }
+  }
+
+  .design {
+    font-size: 0.6875rem;
+    font-weight: 400;
+  }
+}
