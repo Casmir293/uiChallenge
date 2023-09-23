@@ -1,4 +1,3 @@
-
 # Pre-Hackathon Coding Challenge
 
 ![Project Image](/img/project-img.png)
@@ -23,7 +22,7 @@ To run this project locally, follow these steps:
 1. Clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/Nenepo/https://github.com/Nenepo/uiChallenge.git
+git clone https://github.com/Nenepo/uiChallenge.git
 ```
 
 2. Navigate to the project directory.
@@ -52,9 +51,3 @@ Feel free to explore and interact with the project's features.
 - **[Casmir Onyeka] (https://github.com/Casmir293)**
 
 We appreciate the contributions of Nafisa Faruna and Casmir Onyeka to this project.
-
-# uiChallenge
-
-
-# Things learned
-- Order of specificity s very sensitive and matters greatly when using scss. nesting div's is a bad idea
