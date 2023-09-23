@@ -109,7 +109,10 @@ registrationForm.addEventListener("submit", (e) => {
 
 });
 
-
+const registerBtn = document.getElementById('register-btn') 
+registerBtn.addEventListener('click', ()=> {
+  registrationForm();
+})
 backBtn = document.getElementById('back-btn');
 backBtn.addEventListener('click', () => {
   window.history.back();
