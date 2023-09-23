@@ -1,5 +1,5 @@
-@import '_color';
-@import '_font';
+@import "_color";
+@import "_font";
 
 // Contact-header
 body {
@@ -11,7 +11,7 @@ body {
 .mobile-header {
   visibility: hidden;
 }
-.laptop-menu a { 
+.laptop-menu a {
   font-size: 14px;
 }
 .contact-nav {
@@ -59,13 +59,13 @@ body {
 }
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(1.1); /* Scale the image up at 50% */
+    transform: scale(1.1); /* Scale the image up at 50% */
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 .contact-section {
@@ -80,38 +80,38 @@ body {
   width: 30%;
   margin-left: 188px;
 }
-  .contact-info h2 {
-    font-size: 25px;
-    color: $light-purple;
-    font-family: $header-font;
-    font-weight: 600;
-    margin-bottom: 17px;
-  }
-  .contact-info p {
-    font-family: $text-font;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  .contact-socials p {
-    font-family: $text-font;
-    font-size: 16px;
-    font-weight: 400;
-    color: $light-purple;
-  }
-  .contact-icon {
-    height: 20px;
-  }
- 
-  .contact-icon a {
-    text-decoration: none;
-  }
-  .facebook-icon {
-    margin: -5px 5px 0 5px;
-  }
-  .X-icon {
-    margin: 5px 5px 2px 5px;
-  }
+.contact-info h2 {
+  font-size: 25px;
+  color: $light-purple;
+  font-family: $header-font;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+.contact-info p {
+  font-family: $text-font;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.contact-socials p {
+  font-family: $text-font;
+  font-size: 16px;
+  font-weight: 400;
+  color: $light-purple;
+}
+.contact-icon {
+  height: 20px;
+}
+
+.contact-icon a {
+  text-decoration: none;
+}
+.facebook-icon {
+  margin: -5px 5px 0 5px;
+}
+.X-icon {
+  margin: 5px 5px 2px 5px;
+}
 
 //  Right view
 .right {
@@ -147,8 +147,6 @@ body {
   border: solid 1px #fff;
   padding: 10px;
   font-family: $text-font;
-
- 
 }
 // input::placeholder {
 //   color: #fff;
@@ -157,19 +155,18 @@ body {
 // }
 // input:focus{
 //   color: #fff;
-  
+
 // }
 .contact-form input::placeholder {
   color: #fff;
   font-family: $text-font;
 }
-.contact-form input:focus{
+.contact-form input:focus {
   background: transparent;
   border: 1px solid white;
 }
- .contact-form input:hover{
+.contact-form input:hover {
   color: #fff;
-  
 }
 .mobile-input {
   display: none;
@@ -207,14 +204,13 @@ body {
   margin: 30px auto;
   font-size: 0.9rem;
   font-weight: 400;
- font-family: $text-font;
-     border: none;
-    color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
- 
+  font-family: $text-font;
+  border: none;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .form-contact-socials {
   display: none;
@@ -231,7 +227,7 @@ body {
     visibility: visible;
     border: none;
   }
-  .contact-backbtn{
+  .contact-backbtn {
     cursor: pointer;
   }
   svg {
@@ -271,124 +267,121 @@ body {
     margin-top: -220px;
   }
 
-.left {
-  display: none;
-}
+  .left {
+    display: none;
+  }
 
-.contact-section .right {
-  width: 100%;
-  margin-left: 0;
-}
- .contact-form {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 40px;
-  height: auto;
-  border-radius: none;
-  background: none;
-  box-shadow: none;
-  display: block;
-  border: 0;
-}
+  .contact-section .right {
+    width: 100%;
+    margin-left: 0;
+  }
+  .contact-form {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 40px;
+    height: auto;
+    border-radius: none;
+    background: none;
+    box-shadow: none;
+    display: block;
+    border: 0;
+  }
 
-h3 {
-  font-size: 20px;
-  line-height: 1.5;
-  padding: 0 10px;
-  margin-left: -10px;
-  margin-bottom: 20px;
-}
-h3:first-child {
-  margin-bottom: 0px;
-}
-p.form-text {
-  visibility: visible;
-  font-family: $text-font;
-  font-size: 12px;
-  padding: 0 70px;
-  margin-left: -70px;
-  font-weight: 400;
-}
-.contact-form input {
-  
-  border-radius: 4px;
-  color: #fff;
-}
-.team-name{
-  padding: 10px;
-}
-.topic-input{
-  padding: 10px;
-}
-.email-input{
-  padding: 10px;
-}
-.contact-form input::placeholder {
-  color: #fff;
-  font-family: $text-font;
-}
-.contact-form input:focus{
-  background: transparent;
-  border: #fff;
-}
- .contact-form input:hover{
-  color: #fff;
-  
-}
-.desktop-input {
-  display: none;
-}
-.mobile-input {
-  display: block;
-}
-.team-name {
-  margin-top: 30px;
-  width: 100%;
-}
-.email-input {
-  margin-top: 42px;
-  width: 100%;
-}
-.topic-input {
-  margin-top: 42px;
-  width: 100%;
-}
-.message-input {
-  margin-top: 29px;
-  width: 100%;
-  height: 100px;
-  border: solid 1px #fff;
-  background-color: transparent;
-}
-.message-input::placeholder{
-  color: #fff;
-}
+  h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+  }
+  h3:first-child {
+    margin-bottom: 0px;
+  }
+  p.form-text {
+    visibility: visible;
+    font-family: $text-font;
+    font-size: 12px;
+    padding: 0 70px;
+    margin-left: -70px;
+    font-weight: 400;
+  }
+  .contact-form input {
+    border-radius: 4px;
+    color: #fff;
+  }
+  .team-name {
+    padding: 10px;
+  }
+  .topic-input {
+    padding: 10px;
+  }
+  .email-input {
+    padding: 10px;
+  }
+  .contact-form input::placeholder {
+    color: #fff;
+    font-family: $text-font;
+  }
+  .contact-form input:focus {
+    background: transparent;
+    border: #fff;
+  }
+  .contact-form input:hover {
+    color: #fff;
+  }
+  .desktop-input {
+    display: none;
+  }
+  .mobile-input {
+    display: block;
+  }
+  .team-name {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .email-input {
+    margin-top: 42px;
+    width: 100%;
+  }
+  .topic-input {
+    margin-top: 42px;
+    width: 100%;
+  }
+  .message-input {
+    margin-top: 29px;
+    width: 100%;
+    height: 100px;
+    border: solid 1px #fff;
+    background-color: transparent;
+  }
+  .message-input::placeholder {
+    color: #fff;
+  }
 
+  .form-contact-socials {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+  .form-contact-socials p {
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 400;
+    color: $light-purple;
+    margin-bottom: -10px;
+  }
 
-.form-contact-socials {
-  display: block;
-  text-align: center;
-  margin-top: 50px;
-  padding-bottom: 20px;
-}
-.form-contact-socials p {
-  font-family: $text-font;
-  font-size: 16px;
-  font-weight: 400;
-  color: $light-purple;
-  margin-bottom: -10px;
-}
-
-.facebook-icon {
-  margin: auto 10px;
-}
-.X-icon {
-  margin: auto 10px;
-}
-.contact-icon{
-padding-bottom: 100px;
- }
-.contact-icon a {
-  text-decoration: none;
- }
+  .facebook-icon {
+    margin: auto 10px;
+  }
+  .X-icon {
+    margin: auto 10px;
+  }
+  .contact-icon {
+    padding-bottom: 100px;
+  }
+  .contact-icon a {
+    text-decoration: none;
+  }
 }
