@@ -668,6 +668,7 @@ body {
 .register-section {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 
 .register-left {
@@ -689,7 +690,7 @@ body {
 }
 
 .movement-text {
-  color: #FFF;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -764,21 +765,21 @@ input {
 }
 
 .category-input::-moz-placeholder {
-  color: #FFF;
+  color: #fff;
   font-size: 10px;
 }
 
 .category-input::placeholder {
-  color: #FFF;
+  color: #fff;
   font-size: 10px;
 }
 
 .group-input::-moz-placeholder {
-  color: #FFF;
+  color: #fff;
 }
 
 .group-input::placeholder {
-  color: #FFF;
+  color: #fff;
 }
 
 .category-input input {
@@ -795,7 +796,7 @@ input {
 
 .review-text {
   margin-top: 15px;
-  color: #FF26B9;
+  color: #ff26b9;
   font-size: 12px;
   margin-left: 36px;
 }
@@ -965,7 +966,7 @@ input {
   }
   .review-text {
     margin-top: 15px;
-    color: #FF26B9;
+    color: #ff26b9;
     font-size: 13px;
     margin-left: 39px;
     font-style: italic;

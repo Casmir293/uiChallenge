@@ -8,38 +8,38 @@
 .header {
   border-bottom: none;
 }
-.laptop-menu a { 
+.laptop-menu a {
   font-size: 14px;
 }
 .contact-nav {
   font-weight: 600;
   background:
   //  linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
-  $gradient;
+    $gradient;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.register-button{
+.register-button {
   border: 2px solid transparent;
   border-image: $gradient;
   border-image-slice: 1;
   width: 10.75rem;
-    height: 3.3125rem;
-    flex-shrink: 0;
-    border-radius: 0.25rem;
-    margin-left: 50px;
-    a {
-      text-decoration: none;
-      color: $white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
+  height: 3.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  margin-left: 50px;
+  a {
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }
 
- // STAR IMAGES
+// STAR IMAGES
 .star1 {
   width: 18px;
   height: 25px;
@@ -71,7 +71,7 @@
   height: 22px;
   flex-shrink: 0;
   position: absolute;
-  margin-left:595px;
+  margin-left: 595px;
   margin-top: -50px;
   animation: pulse 2s infinite;
 }
@@ -103,127 +103,119 @@
 }
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(1.1); /* Scale the image up at 50% */
+    transform: scale(1.1); /* Scale the image up at 50% */
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
-.register-section{
+.register-section {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 
-.register-left{
+.register-left {
   width: 50%;
 }
 
-.register-right{
+.register-right {
   width: 50%;
 }
-.registration-form h2:first-child{
-color: $light-purple;
-font-family: $header-font;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: 3;
-margin-left: 36px;
+.registration-form h2:first-child {
+  color: $light-purple;
+  font-family: $header-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3;
+  margin-left: 36px;
 }
-.movement-text{
-  color: #FFF;
-font-family: $text-font;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 2;
-margin-left: 36px;
-}
-.registration-form h4{
+.movement-text {
   color: #fff;
-font-family: $text-font;
-font-style: normal;
-font-weight: 600;
-line-height: 3;
-margin-left: 36px;
+  font-family: $text-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  margin-left: 36px;
+}
+.registration-form h4 {
+  color: #fff;
+  font-family: $text-font;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3;
+  margin-left: 36px;
 }
 
-
-.registration-form{
+.registration-form {
   margin-top: 30px;
   width: 85%;
-  padding: 40px ;
+  padding: 40px;
   height: auto;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
-.form-flex{ 
+.form-flex {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
-.category-group{
- display:flex ;
- width: 100%;
- justify-content: space-evenly;
- align-items: center;
+.category-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
 
- margin-top: 5px;
- padding:  0 40px;
+  margin-top: 5px;
+  padding: 0 40px;
 }
-input{
+input {
   color: #fff;
 }
-.input{
-  
+.input {
   display: flex;
   flex-direction: column;
   line-height: 3;
- 
-  
-
 }
-.input label{
+.input label {
   font-size: 12px;
 }
-.input input{
+.input input {
   background-color: transparent;
   border: solid 1px #fff;
   padding: 10px;
 }
-.input input::placeholder{
+.input input::placeholder {
   color: #8f8d8d;
   font-size: 12px;
 }
-.category-input::placeholder{
-  color: #FFF;
+.category-input::placeholder {
+  color: #fff;
   font-size: 10px;
- 
-}.group-input::placeholder{
- color: #FFF;
-
 }
-.category-input  input{
+.group-input::placeholder {
+  color: #fff;
+}
+.category-input input {
   background-color: transparent;
   border: solid 1px #fff;
   padding: 10px;
 }
-.group_size input{
+.group_size input {
   background: transparent;
   border: solid 1px #fff;
   padding: 10px;
-
-  
 }
-.review-text{
+.review-text {
   margin-top: 15px;
-  color: #FF26B9;
+  color: #ff26b9;
   font-size: 12px;
   margin-left: 36px;
 }
@@ -235,46 +227,42 @@ input{
   flex-direction: column;
   line-height: 2;
   margin-right: 20px;
-  label{
+  label {
     font-size: 12px;
   }
 }
 
 .category-input select {
-  padding: 8px; 
+  padding: 8px;
   border: 1px solid #fff;
   width: 100%;
-  background-color: transparent; 
-  cursor: pointer; 
+  background-color: transparent;
+  cursor: pointer;
   color: #fff;
-
 }
 .group_size {
   display: flex;
   flex-direction: column;
   line-height: 2;
   width: 50%;
-  label{
+  label {
     font-size: 12px;
   }
-  
 }
 
 .group_size select {
-  padding: 8px; 
+  padding: 8px;
   border: 1px solid #fff;
   width: 100%;
-  background-color: transparent; 
-  cursor: pointer; 
+  background-color: transparent;
+  cursor: pointer;
   color: #fff;
-
 }
 
-
-.checkbox{
+.checkbox {
   padding: 0 35px;
 }
-.registration-button{
+.registration-button {
   border-radius: 5px;
   width: 85%;
   height: 50px;
@@ -285,17 +273,17 @@ input{
   background: $gradient;
   margin-left: 36px;
 }
-.little-image{
-    display: none;
+.little-image {
+  display: none;
 }
 
 // modal
-.modal{
+.modal {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  margin: auto ;
+  margin: auto;
   width: 100%;
   text-align: center;
   height: 100vh;
@@ -306,36 +294,34 @@ input{
 }
 
 .modal-content {
- 
   margin: 50px auto;
   padding: 20px;
-
 }
-.image{
+.image {
   display: flex;
   position: relative;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
 }
 
-.successful-man{
-position: absolute;
-// right: 100px;
-margin-left: 120px;
+.successful-man {
+  position: absolute;
+  // right: 100px;
+  margin-left: 120px;
 }
-.modal h2{
+.modal h2 {
   font-size: 20px;
   line-height: 1.5;
   font-family: $text-font;
 }
-.modal p{
+.modal p {
   font-family: $text-font;
   padding: 0 50px;
   font-size: 12px;
   line-height: 1.2;
   margin-top: 10px;
 }
-.modal .back-btn{
+.modal .back-btn {
   padding: 15px;
   background: $gradient;
   color: #fff;
@@ -344,155 +330,137 @@ margin-left: 120px;
   margin-top: 20px;
   margin-bottom: 100px;
 }
-@media screen and (max-width: 900px){
-  .header{
-  display: none;}
-  .registration-form{
+@media screen and (max-width: 900px) {
+  .header {
+    display: none;
+  }
+  .registration-form {
     margin-top: 30px;
     padding: 0;
     width: 100%;
-     padding: 40px 10px;
-    background:none;
-    box-shadow: none; 
+    padding: 40px 10px;
+    background: none;
+    box-shadow: none;
   }
-  .register-left{
+  .register-left {
     display: none;
   }
-  .register-right{
-    width: 100%;
-    
-
-  }
-  .register-right form{
+  .register-right {
     width: 100%;
   }
-  .registration-form h2{
-   margin-top: -50px;
-  
+  .register-right form {
+    width: 100%;
   }
-  .little-image{
-display: block;
-margin: 0 auto;
-
+  .registration-form h2 {
+    margin-top: -50px;
   }
-  .form-flex{ 
+  .little-image {
     display: block;
-  
+    margin: 0 auto;
+  }
+  .form-flex {
+    display: block;
   }
 
-  .input{
-    
+  .input {
     display: flex;
     justify-content: center;
     padding: 0 40px;
     // margin-left: -40px;
-  
   }
- 
- 
-  .input input::placeholder{
- 
+
+  .input input::placeholder {
     font-size: 11px;
-  } 
- 
- 
+  }
+
   .category-input {
     width: 70%;
-   
   }
-  
- .group_size {
-  width: 30%;
-  margin-left: 10px;
 
+  .group_size {
+    width: 30%;
+    margin-left: 10px;
   }
- 
-  .review-text{
+
+  .review-text {
     margin-top: 15px;
-    color: #FF26B9;
+    color: #ff26b9;
     font-size: 13px;
     margin-left: 39px;
-  font-style:  italic;
-  margin-bottom: 10px;
+    font-style: italic;
+    margin-bottom: 10px;
   }
-  .break-text{
+  .break-text {
     display: block;
   }
   .checkbox {
     margin-left: 6px;
   }
 
-
-  .registration-button{
+  .registration-button {
     width: 40%;
-   display: block;
-   margin: 40px auto  0;
-  
-  
-    
+    display: block;
+    margin: 40px auto 0;
   }
-  
+
   // STAR IMAGES
-.star1 {
-  width: 15px;
-  height: 15px;
-  // margin-top: 50px;
-  // margin-left: 205px;
-}
-.star2 {
-  width: 15px;
-  height: 15px;
-  // flex-shrink: 0;
-  // position: absolute;
-  // margin-top: -50px;
-  // margin-left: 100px;
-  animation: pulse 2s infinite;
-}
-.star3 {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  z-index: 3;
-  flex-shrink: 0;
-  margin-top: -143px;
-  margin-left: 15px;
-  animation: pulse 2s infinite;
-}
-.star4 {
-  width: 15px;
-  height: 20px;
-  flex-shrink: 0;
-  position: absolute;
-  margin-left:355px;
-  margin-top: -50px;
-  animation: pulse 2s infinite;
-}
-.star5 {
-  width: 15px;
-  height: 20px;
-  flex-shrink: 0;
-  position: absolute;
-  margin-left: 355px;
-  margin-top: -50px;
-  animation: pulse 2s infinite;
-}
-.star6 {
-  width: 15px;
-  height: 15px;
- 
-  margin-top: -450px;
-  animation: pulse 2s infinite;
-  z-index: 4;
-}
-.star7 {
-  width: 9px;
-  height: 15px;
-  flex-shrink: 0;
-  position: absolute;
-  animation: pulse 2s infinite;
-  z-index: 4;
-}
-  
-}
+  .star1 {
+    width: 15px;
+    height: 15px;
+    // margin-top: 50px;
+    // margin-left: 205px;
+  }
+  .star2 {
+    width: 15px;
+    height: 15px;
+    // flex-shrink: 0;
+    // position: absolute;
+    // margin-top: -50px;
+    // margin-left: 100px;
+    animation: pulse 2s infinite;
+  }
+  .star3 {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 3;
+    flex-shrink: 0;
+    margin-top: -143px;
+    margin-left: 15px;
+    animation: pulse 2s infinite;
+  }
+  .star4 {
+    width: 15px;
+    height: 20px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 355px;
+    margin-top: -50px;
+    animation: pulse 2s infinite;
+  }
+  .star5 {
+    width: 15px;
+    height: 20px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 355px;
+    margin-top: -50px;
+    animation: pulse 2s infinite;
+  }
+  .star6 {
+    width: 15px;
+    height: 15px;
 
-
+    margin-top: -450px;
+    animation: pulse 2s infinite;
+    z-index: 4;
+  }
+  .star7 {
+    width: 9px;
+    height: 15px;
+    flex-shrink: 0;
+    position: absolute;
+    animation: pulse 2s infinite;
+    z-index: 4;
+  }
+}
