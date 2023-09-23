@@ -67,3 +67,8 @@ contactForm.addEventListener("submit", (e) => {
     });
   }
 });
+
+const submitBtn = document.getElementById('contact-submit-btn') 
+submitBtn.addEventListener('click', () => {
+  contactForm();
+})
