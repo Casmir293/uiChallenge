@@ -1,3 +1,4 @@
+
 # Pre-Hackathon Coding Challenge
 
 ![Project Image](/img/project-img.png)
@@ -51,3 +52,9 @@ Feel free to explore and interact with the project's features.
 - **[Casmir Onyeka] (https://github.com/Casmir293)**
 
 We appreciate the contributions of Nafisa Faruna and Casmir Onyeka to this project.
+
+# uiChallenge
+
+
+# Things learned
+- Order of specificity s very sensitive and matters greatly when using scss. nesting div's is a bad idea
