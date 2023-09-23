@@ -17,7 +17,7 @@ groupSizeNumber.addEventListener('click', () => {
     option.value = number;
     option.textContent = number;
     option.style.backgroundColor = "transparent";
-    option.style.color = "white";
+    option.style.color = "#000";
     groupSizeNumber.appendChild(option);
   }
 } 
@@ -43,7 +43,7 @@ customCategory.addEventListener('click', () => {
       option.value = category.id;
       option.textContent = category.name;
       option.style.backgroundColor = "transparent"
-      option.style.textContent = "#fff"
+      option.style.textContent = "#000"
       customCategory.appendChild(option);
     });
   })
