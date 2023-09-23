@@ -2,14 +2,15 @@
 @import "_font";
 
 // Contact-header
-body {
-  height: 140vh;
+.body-section{
+  height: 120vh;
+  
 }
 .header {
   border-bottom: none;
 }
 .mobile-header {
-  visibility: hidden;
+  display: none;
 }
 .laptop-menu a {
   font-size: 14px;
@@ -71,6 +72,7 @@ body {
 .contact-section {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 
 // left view
@@ -122,7 +124,7 @@ body {
   margin-top: 30px;
   margin-left: 30px;
   width: 70%;
-  padding: 20px 90px;
+  padding: 20px 50px;
   height: auto;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.03);
@@ -140,7 +142,7 @@ body {
   margin-top: 55px;
 }
 .form-text {
-  visibility: hidden;
+  display: none;
 }
 .contact-form input {
   background-color: transparent;
@@ -148,15 +150,7 @@ body {
   padding: 10px;
   font-family: $text-font;
 }
-// input::placeholder {
-//   color: #fff;
-//   font-family: $text-font;
 
-// }
-// input:focus{
-//   color: #fff;
-
-// }
 .contact-form input::placeholder {
   color: #fff;
   font-family: $text-font;
@@ -187,6 +181,7 @@ body {
   padding-bottom: 50px;
   border: solid 1px #fff;
   background-color: transparent;
+  resize: none;
 }
 .message-input::placeholder {
   color: #fff;
@@ -215,24 +210,23 @@ body {
 .form-contact-socials {
   display: none;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   body {
-    height: 130vh;
     scroll-behavior: smooth;
   }
   .header {
     display: none;
   }
   .mobile-header {
-    visibility: visible;
+    display: block;
     border: none;
   }
   .contact-backbtn {
     cursor: pointer;
   }
-  svg {
-    margin-top: 30px;
-  }
+  // svg {
+  //   margin-top: 30px;
+  // }
   // STAR IMAGES
   .star-img-1 {
     width: 12px;
@@ -270,6 +264,7 @@ body {
   .left {
     display: none;
   }
+
 
   .contact-section .right {
     width: 100%;
@@ -357,6 +352,83 @@ body {
   .message-input::placeholder {
     color: #fff;
   }
+
+h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0 10px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+}
+h3:first-child {
+  margin-bottom: 0px;
+}
+p.form-text {
+  display: block;
+  font-family: $text-font;
+  font-size: 12px;
+  padding: 0 70px;
+  margin-left: -70px;
+  font-weight: 400;
+}
+.contact-form input {
+  
+  border-radius: 4px;
+  color: #fff;
+}
+.team-name{
+  padding: 10px;
+}
+.topic-input{
+  padding: 10px;
+}
+.email-input{
+  padding: 10px;
+}
+.contact-form input::placeholder {
+  color: #fff;
+  font-family: $text-font;
+}
+.contact-form input:focus{
+  background: transparent;
+  border: #fff;
+}
+ .contact-form input:hover{
+  color: #fff;
+  
+}
+.desktop-input {
+  display: none;
+}
+.mobile-input {
+  display: block;
+}
+.team-name {
+  margin-top: 30px;
+  width: 100%;
+}
+.email-input {
+  margin-top: 42px;
+  width: 100%;
+}
+.topic-input {
+  margin-top: 42px;
+  width: 100%;
+}
+.message-input {
+  margin-top: 29px;
+  width: 100%;
+  height: 100px;
+  border: solid 1px #fff;
+  background-color: transparent;
+}
+.message-input::placeholder{
+  color: #fff;
+}
+.message-input::before:active{
+  border: 1px solid #fff;
+}
+
 
   .form-contact-socials {
     display: block;

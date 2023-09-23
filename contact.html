@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <div class="body-section">
     <header class="mobile-header">
       <div id="contact-backbtn" class="contact-backbtn">
         <svg
@@ -183,12 +184,7 @@
             Email us below to any question related to our event
           </p>
           <div class="desktop-input">
-            <input
-              type="text"
-              placeholder="First Name"
-              class="name-input"
-              name="first_name"
-            />
+            <input type="text" placeholder="First Name" class="name-input" name="first_name">
             <input
               type="email"
               name="email"
@@ -196,12 +192,12 @@
               class="email-input"
               placeholder="Mail"
             />
-            <input
-              type="text"
-              placeholder="Message"
-              class="message-input"
-              name="message"
-            />
+
+            <textarea type="text" placeholder="Message" class="message-input" 
+            name="message" id="message-input" cols="4" rows="20"></textarea>
+            
+
+          
           </div>
           <div class="mobile-input">
             <input
@@ -216,6 +212,12 @@
               placeholder="Topic"
               id="topic-input"
             />
+
+            <input type="email"  id="email-input"
+            class="email-input"         placeholder="Email">
+            <textarea type="text" placeholder="Message" class="message-input" id="message-input"></textarea>
+           
+
             <input
               type="email"
               id="email-input"
@@ -228,6 +230,7 @@
               class="message-input"
               id="message-input"
             />
+
           </div>
           <div>
             <button type="submit" id="contact-submit-btn" class="submit-btn">
@@ -318,6 +321,7 @@
         /></span>
       </div>
     </section>
+  </div>
     <script src="contact.js"></script>
   </body>
 </html>

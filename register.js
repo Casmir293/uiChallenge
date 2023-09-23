@@ -108,11 +108,34 @@ registrationForm.addEventListener("submit", (e) => {
 
 
 });
+const validateForm = () => {
+  let isValid = true;
+  if (nameInput.value.trim() === '') {
+    nameInput.style.borderColor = 'red';
+    isValid = false;
+  } else {
+    nameInput.style.borderColor = ''; 
+  }
+ 
+  if (emailInput.value.trim() === '') {
+    emailInput.style.borderColor = 'red';
+    isValid = false;
+  } else {
+    emailInput.style.borderColor = ''; // Reset border color
+  }
+
+  return isValid;
+};
 
 const registerBtn = document.getElementById('register-btn') 
 registerBtn.addEventListener('click', ()=> {
   registrationForm();
+    // Function to show the modal
+    const modal = document.getElementById("modal");
+    modal.style.opacity = "0.5";
+    modal.style.display = 'block';
 })
+
 backBtn = document.getElementById('back-btn');
 backBtn.addEventListener('click', () => {
   window.history.back();
