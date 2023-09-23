@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./fonts/display.css" />
   </head>
   <body>
+    <div class="body-section">
     <header class="mobile-header">
         <div id="contact-backbtn" class="contact-backbtn">
         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
@@ -150,7 +151,7 @@
 to our event
           </p>
           <div class="desktop-input">
-            <input type="text" placeholder="First Name" class="name-input" name="first_name"/>
+            <input type="text" placeholder="First Name" class="name-input" name="first_name">
             <input
               type="email"
               name="email"
@@ -158,8 +159,8 @@ to our event
               class="email-input"
               placeholder="Mail"
             />
-            <input type="text" placeholder="Message" class="message-input" 
-            name="message"/>
+            <textarea type="text" placeholder="Message" class="message-input" 
+            name="message" id="message-input" cols="4" rows="20"></textarea>
             
           </div>
           <div class="mobile-input">
@@ -172,7 +173,7 @@ to our event
             />
             <input type="email"  id="email-input"
             class="email-input"         placeholder="Email">
-            <input type="text" placeholder="Message" class="message-input" id="message-input"/>
+            <textarea type="text" placeholder="Message" class="message-input" id="message-input"></textarea>
            
           </div>
           <div >
@@ -259,6 +260,7 @@ to our event
         <span><img class="star-img-4" src="image/star-white.png" alt="" /></span>
       </div>
     </section>
+  </div>
     <script src="contact.js"></script>
   </body>
 </html>
